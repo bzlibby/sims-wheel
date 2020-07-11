@@ -1,7 +1,7 @@
 /* palette:
 	greens:
 		light: #aaff91
-		medium: #75e061 
+		medium: rgb(117, 224, 97) 
 		dark: #3ead31
 	black: #00000
 */
@@ -17,18 +17,71 @@ body {
   width: 60%;
 }
 			
-/* header styles */
 header {
-  border: 2px black solid;
-  border-radius: 5px;
-  width: 100%;
-  justify-items: center;
-	font-size: 20px;
-	font-family: 'Special Elite', cursive;
-  padding-top: 25px;
-  padding-bottom: 25px;
-	margin-top: 25px;
-	background-color: white;
+	font-family: 'Special Elite', serif;
+	text-align: center;
+	margin-top: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: rgb(117, 224, 97, 0.8);
+	border-radius: 10px;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+h2 {
+	font-size: 18px;
+	margin-top: -30px;
 }
       
-/* primary content styles */
+#pack-selection {
+	margin-top: 15px;
+	padding: 10px;
+	padding-bottom: 10px;
+	background-color: rgb(117, 224, 97, 0.8);
+	border-radius: 10px;
+	font-family: Calibri, Arial, sans-serif;
+	font-size: 12px;
+}
+
+#pack-selection h3 {
+	font-family: 'Special Elite', serif;
+	font-size: 24px;
+}
+
+#pack-selection h4 {
+	font-family: 'Special Elite', serif;
+	font-size: 16px;
+}
+
+.spinner {
+	margin-top: 15px;
+	padding: 10px;
+	padding-bottom: 10px;
+	background-color: rgb(117, 224, 97, 0.8);
+	border-radius: 10px;
+	font-family: Calibri, Arial, sans-serif;
+	font-size: 12px;
+}
+
+.results {
+	margin-top: 15px;
+	padding: 10px;
+	padding-bottom: 10px;
+	background-color: rgb(117, 224, 97, 0.8);
+	border-radius: 10px;
+	font-family: Calibri, Arial, sans-serif;
+	font-size: 12px;
+}
+
+footer {
+	font-family: 'Special Elite', serif;
+	font-size: 18px;
+	text-align: center;
+}
+
+footer a {
+	color: #000;
+}
