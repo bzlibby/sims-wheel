@@ -29,17 +29,31 @@ header {
 
 h1 {
 	font-size: 50px;
+	background-color: rgb(62, 173, 49, 0.5);
+	padding-top: 10px;
+	border-radius: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 0px;
 }
 
 h2 {
 	font-size: 18px;
 	margin-top: -30px;
 }
+
+a {
+	color: #000;
+}
+
+a:hover {
+	color: #aaff91;
+	background-color: #000;
+}
       
 #pack-selection {
 	margin-top: 15px;
 	padding: 10px;
-	padding-bottom: 10px;
 	background-color: rgb(117, 224, 97, 0.8);
 	border-radius: 10px;
 	font-family: Calibri, Arial, sans-serif;
@@ -49,39 +63,82 @@ h2 {
 #pack-selection h3 {
 	font-family: 'Special Elite', serif;
 	font-size: 24px;
+	text-align: center;
+	background-color: rgb(62, 173, 49, 0.5);
+	padding-top: 5px;
+	border-radius: 5px;
+	margin-top: 0px;
 }
 
 #pack-selection h4 {
 	font-family: 'Special Elite', serif;
 	font-size: 16px;
+	margin-bottom: 0px;
 }
 
-.spinner {
+.pack-list {
+	margin-top: -5px;
+}
+
+#spinner {
+	margin-top: 15px;ß
+	text-align: center;
+}
+
+/* button base style from https://css-tricks.com/overriding-default-button-styles/ */
+button {
+  display: inline-block;
+	border: none;
+	border-radius: 5px;
+  padding: 10px 40px;
+  text-decoration: none;
+  background: rgb(117, 224, 97, 0.8);
+  color: #000;
+	font-family: 'Special Elite', serif;
+  font-size: 18px;
+  text-align: center;
+  transition: background 250ms ease-in-out, 
+              transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button:hover {
+		background: rgb(62, 173, 49, 0.8);
+}
+
+button:focus {
+	background: rgb(62, 173, 49, 0.8);
+	outline-width: 0px;
+}
+
+button:active {
+	color: #aaff91;
+}
+/* end button style */
+
+#results {
 	margin-top: 15px;
 	padding: 10px;
 	padding-bottom: 10px;
 	background-color: rgb(117, 224, 97, 0.8);
 	border-radius: 10px;
-	font-family: Calibri, Arial, sans-serif;
+	font-family: 'Calibri', Arial, sans-serif;
 	font-size: 12px;
 }
 
-.results {
-	margin-top: 15px;
-	padding: 10px;
-	padding-bottom: 10px;
-	background-color: rgb(117, 224, 97, 0.8);
-	border-radius: 10px;
-	font-family: Calibri, Arial, sans-serif;
-	font-size: 12px;
+#results h3 {
+	font-family: 'Special Elite', serif;
+	font-size: 24px;
+	text-align: center;
+	background-color: rgb(62, 173, 49, 0.5);
+	padding-top: 5px;
+	border-radius: 5px;
+	margin-top: 0px;
 }
 
 footer {
 	font-family: 'Special Elite', serif;
 	font-size: 18px;
 	text-align: center;
-}
-
-footer a {
-	color: #000;
 }
