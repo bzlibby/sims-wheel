@@ -1,14 +1,19 @@
-document.body.onload = addElement;
+document.body.onload = function () {
+	addPacks();
+};
 
-function addElement () { 
+/** 
+ * adds "hi there and greetings" to the pack selection div; 
+ * edit later to create the checkbox lists 
+ */
+function addPacks () { 
   // create a new div element 
-  var newDiv = document.createElement("div"); 
+  const newDiv = document.createElement("div"); 
   // and give it some content 
-  var newContent = document.createTextNode("Hi there and greetings!"); 
+  const newContent = document.createTextNode("Hi there and greetings!"); 
   // add the text node to the newly created div
   newDiv.appendChild(newContent);  
-
   // add the newly created element and its content into the DOM 
-	var currentDiv = document.getElementById("pack-selection"); 
-  document.body.insertBefore(newDiv, currentDiv); 
+	const currentDiv = document.getElementById("pack-selection"); 
+	currentDiv.append(newDiv);	
 }
