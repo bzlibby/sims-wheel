@@ -7,13 +7,17 @@ document.body.onload = function () {
  * edit later to create the checkbox lists 
  */
 function addPacks () { 
-  // create a new div element 
-  const newDiv = document.createElement("div"); 
-  // and give it some content 
-  const newContent = document.createTextNode("Hi there and greetings!"); 
-  // add the text node to the newly created div
-  newDiv.appendChild(newContent);  
-  // add the newly created element and its content into the DOM 
-	const currentDiv = document.getElementById("pack-selection"); 
-	currentDiv.append(newDiv);	
+	// adds expansion packs
+	createPackList ('e-packs', 'This is where the expansion packs will go.');
+	// add game packs
+	createPackList ('g-packs', 'This is where the game packs will go.');
+	// add stuff packs
+	createPackList ('s-packs', 'This is where the stuff packs will go.');
+}
+
+function createPackList (parent, content) {
+	const packDiv = document.createElement('div');
+	packDiv.textContent = content;
+	const currentDiv = document.getElementById(parent);
+	currentDiv.append(packDiv);
 }
