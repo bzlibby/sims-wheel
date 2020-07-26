@@ -1,15 +1,14 @@
-/* palette:
-	greens:
-		light: #aaff91
-		medium: rgb(117, 224, 97) 
-		dark: #3ead31
-	black: #00000
-*/
-
-/* fonts:
-	font-family: 'Special Elite', cursive;
-	font-family: Calibri, Arial, sans-serif;
-*/
+:root {
+	--lightgreen: #aaff91;
+	--mediumgreen: rgb(117, 224, 97);
+	--mediumtransgreen: rgb(117, 224, 97, 0.8);
+	--darktransgreen: rgb(62, 173, 49, 0.8);
+	--darkgreen: #3ead31;
+	--black: #000;
+	--transblack: rgb(0, 0, 0, 0.8);
+	--headerfont: 'Special Elite', serif;
+	--bodyfont: Calibri, Arial, sans-serif;
+}
 
 body {
 	background-image: url('plumbob-bg.png');
@@ -18,18 +17,18 @@ body {
 }
 			
 header {
-	font-family: 'Special Elite', serif;
+	font-family: var(--headerfont);
 	text-align: center;
 	margin-top: 50px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	background-color: rgb(117, 224, 97, 0.8);
+	background-color: var(--mediumtransgreen);
 	border-radius: 10px;
 }
 
 h1 {
 	font-size: 50px;
-	background-color: rgb(62, 173, 49, 0.5);
+	background-color: var(--darktransgreen);
 	padding-top: 10px;
 	border-radius: 5px;
 	margin-left: 10px;
@@ -43,35 +42,38 @@ h2 {
 }
 
 a {
-	color: #000;
+	color: var(--black);
 }
 
 a:hover {
-	color: #aaff91;
-	background-color: #000;
+	color: var(--lightgreen);
+	background-color: var(--transblack);
+	padding: 5px;
+	transition: 400ms ease-in-out;
+	border-radius: 5px;
 }
       
 #pack-selection {
 	margin-top: 15px;
 	padding: 10px;
-	background-color: rgb(117, 224, 97, 0.8);
+	background-color: var(--mediumtransgreen);
 	border-radius: 10px;
-	font-family: Calibri, Arial, sans-serif;
+	font-family: var(--bodyfont);
 	font-size: 12px;
 }
 
 #pack-selection h3 {
-	font-family: 'Special Elite', serif;
+	font-family: var(--headerfont);
 	font-size: 24px;
 	text-align: center;
-	background-color: rgb(62, 173, 49, 0.5);
+	background-color: var(--darktransgreen);
 	padding-top: 5px;
 	border-radius: 5px;
 	margin-top: 0px;
 }
 
 #pack-selection h4 {
-	font-family: 'Special Elite', serif;
+	font-family: var(--headerfont);
 	font-size: 16px;
 	margin-bottom: 0px;
 }
@@ -90,30 +92,32 @@ button {
   display: inline-block;
 	border: none;
 	border-radius: 5px;
-  padding: 10px 40px;
+	padding: 10px;
+	width: 100%;
   text-decoration: none;
-  background: rgb(117, 224, 97, 0.8);
-  color: #000;
-	font-family: 'Special Elite', serif;
+	background: var(--mediumtransgreen);
+  color: var(--black);
+	font-family: var(--headerfont);
   font-size: 18px;
   text-align: center;
-  transition: background 250ms ease-in-out, 
-              transform 150ms ease;
+  transition: 400ms ease-in-out;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 
 button:hover {
-		background: rgb(62, 173, 49, 0.8);
+		background: var(--transblack);
+		color: var(--lightgreen);
+		padding: 15px;
 }
 
 button:focus {
-	background: rgb(62, 173, 49, 0.8);
+	background: var(--darktransgreen);
 	outline-width: 0px;
 }
 
 button:active {
-	color: #aaff91;
+	color: var(--lightgreen);
 }
 /* end button style */
 
@@ -121,24 +125,32 @@ button:active {
 	margin-top: 15px;
 	padding: 10px;
 	padding-bottom: 10px;
-	background-color: rgb(117, 224, 97, 0.8);
+	background-color: var(--mediumtransgreen);
 	border-radius: 10px;
-	font-family: 'Calibri', Arial, sans-serif;
+	font-family: var(--bodyfont);
 	font-size: 12px;
 }
 
 #results h3 {
-	font-family: 'Special Elite', serif;
+	font-family: var(--headerfont);
 	font-size: 24px;
 	text-align: center;
-	background-color: rgb(62, 173, 49, 0.5);
+	background-color: var(--darktransgreen);
 	padding-top: 5px;
 	border-radius: 5px;
 	margin-top: 0px;
 }
 
+table {
+	table-layout: fixed;
+	width: 80%;
+	border-width: 10px;
+	border-color: var(--black);
+	font-family: var(--bodyfont);
+}
+
 footer {
-	font-family: 'Special Elite', serif;
+	font-family: var(--headerfont);
 	font-size: 18px;
 	text-align: center;
 }
