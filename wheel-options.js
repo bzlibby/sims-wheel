@@ -1,3 +1,9 @@
+const datas = {
+	// establishes base game data
+	worlds: ['Willow Creek', 'Oasis Springs', 'Newcrest'],
+	traits: ['Great Acoustics', 'Fast Internet', 'Homey', 'Science Lair', 'Convival', 'Natural Light', 'Bracing Breezes', 'Private Dwelling', 'Teen Neighborhood', 'Off-the-Grid', 'Clothing Optional'],
+};
+
 const expansionPacks = ['Get to Work', 'Get Together', 'City Living', 'Cats & Dogs', 'Seasons', 'Get Famous', 'Island Living', 'Discover University', 'Eco Lifestyle'];
 const gamePacks = ['Outdoor Retreat', 'Spa Day', 'Dine Out', 'Vampires', 'Parenthood', 'Jungle Adventure', 'Realm of Magic', 'StrangerVille'];
 const stuffPacks = ['Luxury Party', 'Perfect Patio', 'Cool Kitchen', 'Spooky Stuff', 'Movie Hangout', 'Romantic Garden', `Kids' Room`, 'Backyard', 'Vintage Glamour', 'Bowling Night', 'Fitness', 'Toddler', 'Laundry Day', 'My First Pet', 'Moschino'];
@@ -52,12 +58,6 @@ const gamePackData = {
 };
 
 function getDatas(expansions, games) {
-	const datas = {
-		// establishes base game data
-		worlds: ['Willow Creek', 'Oasis Springs', 'Newcrest'],
-		traits: ['Great Acoustics', 'Fast Internet', 'Homey', 'Science Lair', 'Convival', 'Natural Light', 'Bracing Breezes', 'Private Dwelling', 'Teen Neighborhood', 'Off-the-Grid', 'Clothing Optional'],
-	};
-
 	for (const e of expansions) {
 		// adds data from selected expansion packs
 		const eData = expansions[e];
@@ -73,6 +73,10 @@ function getDatas(expansions, games) {
 	};
 
 	return datas;
+}
+
+document.body.onload = function () {
+	getDatas(expansionPackData, gamePackData)
 }
 
 const lotSizes = ['20x15 or 20x20', '30x20 or 30x30', '40x30 or 40x40', '50x50 or 50x40', '64x64'];

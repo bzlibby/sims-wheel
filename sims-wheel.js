@@ -8,16 +8,16 @@ document.body.onload = function () {
  */
 function addPacks () { 
 	// adds expansion packs
-	createPackList ('e-packs', 'This is where the expansion packs will go.');
+	createPackList ('e-packs', expansionPacks);
 	// add game packs
-	createPackList ('g-packs', 'This is where the game packs will go.');
+	createPackList ('g-packs', gamePacks);
 	// add stuff packs
-	createPackList ('s-packs', 'This is where the stuff packs will go.');
+	createPackList ('s-packs', stuffPacks);
 }
 
 function createPackList (parent, content) {
 	const packDiv = document.createElement('div');
-	packDiv.textContent = content;
+	packDiv.textContent = JSON.stringify(content);
 	const currentDiv = document.getElementById(parent);
 	currentDiv.append(packDiv);
 }
