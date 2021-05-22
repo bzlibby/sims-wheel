@@ -1,16 +1,25 @@
+/**
+ * Establishes base game data
+ */
 const datas = {
-	// establishes base game data
 	worlds: ['Willow Creek', 'Oasis Springs', 'Newcrest'],
 	traits: ['Great Acoustics', 'Fast Internet', 'Homey', 'Science Lair', 'Convival', 'Natural Light', 'Bracing Breezes', 'Private Dwelling', 'Teen Neighborhood', 'Off-the-Grid', 'Clothing Optional'],
 	types: ['Residential'],
-	specialFeatures: ['Art Studio', 'Music Room', 'Bar', 'Study', 'Garden', 'Pool']
+	specialFeatures: ['Art Studio', 'Music Room', 'Bar', 'Study', 'Garden', 'Pool'],
+	lotSizes: ['20x15 or 20x20', '30x20 or 30x30', '40x30 or 40x40', '50x50 or 50x40', '64x64'],
+	budgets: ['20k', '35k', '50k', '75k', '100k'],
+	householdSizes: ['1-2 Sims', '3-4 Sims', '5-6 Sims', '7-8 Sims'],
+	buildStyles: ['Colonial', 'Ranch', 'Mid-Century', 'Victorian', 'Modern', 'Mediterranean', 'Craftsman'],
+	colorSchemes: ['Neutrals', 'Brights', 'Cool Colors', 'Warm Colors', 'Greyscale'],
+	packLimits: ['None', 'One pack', 'Three packs', 'Any packs'],
+	ccOptions: ['yes', 'no'],
 };
 
+/**
+ * List of possible expansion, game, and stuff packs, and kits, and their cooresponding worlds, traits, types, and specialFeatures
+ */
+// expansions packs
 const expansionPacks = ['Get to Work', 'Get Together', 'City Living', 'Cats & Dogs', 'Seasons', 'Get Famous', 'Island Living', 'Discover University', 'Eco Lifestyle', 'Snowy Escape'];
-const gamePacks = ['Outdoor Retreat', 'Spa Day', 'Dine Out', 'Vampires', 'Parenthood', 'Jungle Adventure', 'Realm of Magic', 'StrangerVille', 'Journey to Batuu'];
-const stuffPacks = ['Luxury Party', 'Perfect Patio', 'Cool Kitchen', 'Spooky Stuff', 'Movie Hangout', 'Romantic Garden', `Kids' Room`, 'Backyard', 'Vintage Glamour', 'Bowling Night', 'Fitness', 'Toddler', 'Laundry Day', 'My First Pet', 'Moschino', 'Knifty Knitting', 'Tiny Living', 'Paranormal'];
-const kits = ['Bust the Dust', 'Country Kitchen', 'Throwback Fit', 'Courtyard Oasis'];
-
 const expansionPackData = {
 	'Get to Work': {
 		worlds: ['Magnolia Promonade'],
@@ -51,7 +60,8 @@ const expansionPackData = {
 		specialFeatures: ['Home Onsen'],
 	}
 };
-
+// game packs
+const gamePacks = ['Outdoor Retreat', 'Spa Day', 'Dine Out', 'Vampires', 'Parenthood', 'Jungle Adventure', 'Realm of Magic', 'StrangerVille', 'Journey to Batuu'];
 const gamePackData = {
 	'Vampires': {
 		worlds: ['Forgotten Hollow'],
@@ -76,7 +86,8 @@ const gamePackData = {
 		specialFeatures: ['Play Room']
 	}
 };
-
+// stuff packs
+const stuffPacks = ['Luxury Party', 'Perfect Patio', 'Cool Kitchen', 'Spooky Stuff', 'Movie Hangout', 'Romantic Garden', `Kids' Room`, 'Backyard', 'Vintage Glamour', 'Bowling Night', 'Fitness', 'Toddler', 'Laundry Day', 'My First Pet', 'Moschino', 'Knifty Knitting', 'Tiny Living', 'Paranormal'];
 const stuffPackData = {
 	'Luxury Party': {
 		specialFeatures: ['Ballroom'],
@@ -104,14 +115,15 @@ const stuffPackData = {
 		specialFeatures: ['Attic'],
 	}
 }
-
+// kits
+const kits = ['Bust the Dust', 'Country Kitchen', 'Throwback Fit', 'Courtyard Oasis'];
 const kitData = {
 	'Courtyard Oasis': {
 		specialFeatures: ['Courtyard'],
 	},
 };
 
-function getDatas(expansions, games, stuffs, kits) {
+function addPackData(expansions, games, stuffs, kits) {
 	for (const e of expansions) {
 		// adds data from selected expansion packs
 		const eData = expansions[e];
@@ -147,13 +159,5 @@ function getDatas(expansions, games, stuffs, kits) {
 }
 
 document.body.onload = function () {
-	getDatas(expansionPackData, gamePackData, stuffPackData, kData)
+	addPackData(expansionPackData, gamePackData, stuffPackData, kitData);
 }
-
-const lotSizes = ['20x15 or 20x20', '30x20 or 30x30', '40x30 or 40x40', '50x50 or 50x40', '64x64'];
-const budgets = ['20k', '35k', '50k', '75k', '100k'];
-const householdSizes = ['1-2 Sims', '3-4 Sims', '5-6 Sims', '7-8 Sims'];
-const buildStyles = ['Colonial', 'Ranch', 'Mid-Century', 'Victorian', 'Modern', 'Mediterranean', 'Craftsman'];
-const colorSchemes = ['Neutrals', 'Brights', 'Cool Colors', 'Warm Colors', 'Greyscale'];
-const packLimits = ['None', 'One pack', 'Three packs', 'Any packs'];
-const ccOptions = ['yes', 'no'];
