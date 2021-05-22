@@ -7,12 +7,13 @@ function spin (options) {
 const spun = {
   world: spin(datas.worlds),
   traits: spin(datas.traits), // TODO: make this happen 3 times, with unique results each time
+  types: spin(datas.types),
   lotSize: spin(lotSizes),
   budget: spin(budgets),
   householdSize: spin(householdSizes),
   buildStyles: spin(buildStyles),
   colorScheme: spin(colorSchemes),
-  specialFeature: spin(specialFeatures),
+  specialFeature: spin(datas.specialFeatures),
   packLimit: spin(packLimits),
   ccOption: spin(ccOptions)
 }

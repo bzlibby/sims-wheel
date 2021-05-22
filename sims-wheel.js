@@ -13,6 +13,8 @@ function addPacks () {
 	createPackList ('g-packs', gamePacks);
 	// add stuff packs
 	createPackList ('s-packs', stuffPacks);
+	// add kits
+	createPackList ('kits', kits);
 }
 
 function createPackList (parent, content) {
