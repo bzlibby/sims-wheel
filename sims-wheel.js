@@ -2,9 +2,8 @@ document.body.onload = function () {
 	addPacks();
 };
 
-/** 
- * adds "hi there and greetings" to the pack selection div; 
- * edit later to create the checkbox lists 
+/**
+ * generate and add list of packs to select
  */
 function addPacks () { 
 	// adds expansion packs
@@ -40,6 +39,6 @@ function createPackList (parent, content) {
 	currentDiv.append(packDiv);
 }
 
-function createCheckbox () {
-
-}
+/**
+ * Add selected pack data for wheel spin
+ */
