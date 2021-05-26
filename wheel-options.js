@@ -244,7 +244,9 @@ function addPackData(datas, expansions, games, stuffs, kits) {
 	return datas;
 }
 
-document.body.onclick = function () {
-	addPackData(datas, expansionPackData, gamePackData, stuffPackData, kitData);
-	console.log('this is the final data: ', datas)
+document.body.onload = function() {
+	document.getElementById('spinner-button').onclick = function() {
+		addPackData(datas, expansionPackData, gamePackData, stuffPackData, kitData);
+		console.log('this is the final data: ', datas)
+	}
 }

@@ -18,4 +18,4 @@ const spun = {
   ccOption: spin(datas.ccOptions)
 }
 
-document.getElementById('spinner-button').onclick = console.log(spun);
+// document.getElementById('spinner-button').onclick = console.log(spun);
