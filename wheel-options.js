@@ -16,148 +16,235 @@ const datas = {
 };
 
 /**
- * List of possible expansion, game, and stuff packs, and kits, and their cooresponding worlds, traits, types, and specialFeatures
+ * Each expansion pack requires the following keys:
+ * name
+ * worlds
+ * traits
+ * types
+ * specialFeatures
  */
-// expansions packs
 const expansionPacks = ['Get to Work', 'Get Together', 'City Living', 'Cats & Dogs', 'Seasons', 'Get Famous', 'Island Living', 'Discover University', 'Eco Lifestyle', 'Snowy Escape'];
-const expansionPackData = {
-	'Get to Work': {
+const expansionPackData = [
+	{
+		name: 'Get to Work',
 		worlds: ['Magnolia Promonade'],
+		traits: [],
+		types: [],
 		specialFeatures: ['Laboratory', 'Observatory', 'Retail Space'],
 	},
-	'Get Together': {
+	{
+		name: 'Get Together',
 		worlds: ['Windenburg'],
+		traits: [],
+		types: [],
+		specialFeatures: ['Club/Game Room'],
 	},
-	'City Living': {
+	{	
+		name: 'City Living',
 		worlds: ['San Myshuno'],
 		traits: [`Chef's Kitchen`, 'Quake Zone', 'Good Schools', 'Mean Vibe', 'Home Studio', 'Sunny Aspect', 'Cursed', 'Grody', 'Gremlins', 'Penny Pixies', 'Party Place', 'Filthy', 'Haunted', 'Romantic Aura', 'Great Soil', `Child's Play`, 'On Ley Line', 'Gnomes'],
 		types: ['Apartment/Penthouse'],
+		specialFeatures: [],
 	},
-	'Cats & Dogs': {
+	{
+		name: 'Cats & Dogs',
 		worlds: ['Brindleton Bay'],
 		traits: ['Breeding Grounds', 'Cat Friendly', 'Cat Hangout', 'Dog Friendly', 'Dog Hangout', 'Training Ground'],
+		types: [],
 		specialFeatures: ['Pet Room']
 	},
-	'Get Famous': {
+	{
+		name: 'Get Famous',
 		worlds: ['Del Sol Valley'],
 		traits: ['Celebrity Home'],
+		types: [],
 		specialFeatures: ['Streaming/Recording Room'],
 	},
-	'Island Living': {
+	{
+		name: 'Island Living',
 		worlds: ['Sulani'],
 		traits: ['Island Living', 'Volcanic Activity'],
+		types: [],
+		specialFeatures: [],
 	},
-	'Discover University': {
+	{
+		name: 'Discover University',
 		worlds: ['Britechester'],
 		traits: ['Study Spot'],
+		types: [],
+		specialFeatures: [],
 	},
-	'Eco Lifestyle': {
+	{
+		name: 'Eco Lifestyle',
 		worlds: ['Evergreen Harbor'],
 		traits: ['Eco Lot', 'Geothermal', 'Landfill Lot', 'Natural Well', 'Reduce and Recycle'],
+		types: [],
+		specialFeatures: [],
 	},
-	'Snowy Escape': {
+	{
+		name: 'Snowy Escape',
 		worlds: ['Mt. Komorebi'],
+		traits: [],
+		types: [],
 		specialFeatures: ['Home Onsen'],
 	}
-};
-// game packs
+];
+
+/**
+ * Each game pack requires the following keys:
+ * name
+ * worlds
+ * traits
+ * types
+ * specialFeatures
+ */
 const gamePacks = ['Outdoor Retreat', 'Spa Day', 'Dine Out', 'Vampires', 'Parenthood', 'Jungle Adventure', 'Realm of Magic', 'StrangerVille', 'Journey to Batuu'];
-const gamePackData = {
-	'Vampires': {
+const gamePackData = [
+	{
+		name: 'Vampires',
 		worlds: ['Forgotten Hollow'],
 		traits: ['On a Dark Ley Line', 'Registered Vampire Lair', 'Vampire Nexus'],
+		types: [],
 		specialFeatures: ['Graveyard'],
 	},
-	'Jungle Adventure': {
+	{
+		name: 'Jungle Adventure',
+		worlds: [],
 		traits: ['Creepy Crawlies', 'Peace and Quiet'],
+		types: [],
+		specialFeatures: [],
 	},
-	'Realm of Magic': {
+	{
+		name: 'Realm of Magic',
 		worlds: ['Glimmerbrook'],
+		traits: [],
+		types: [],
 		specialFeatures: ['Magic Room']
 	},
-	'Strangerville': {
+	{
+		name: 'Strangerville',
 		worlds: ['Strangerville'],
+		traits: [],
+		types: [],
 		specialFeatures: ['Bunker'],
 	},
-	'Spa Day': {
+	{
+		name: 'Spa Day',
+		worlds: [],
+		traits: [],
+		types: [],
 		specialFeatures: ['Home Spa'],
 	},
-	'Parenthood': {
+	{
+		name: 'Parenthood',
+		worlds: [],
+		traits: [],
+		types: [],
 		specialFeatures: ['Play Room']
 	}
-};
-// stuff packs
+];
+
+/** 
+ * Each stuff pack requires the following keys:
+ * name
+ * types
+ * specialFeatures
+ */
 const stuffPacks = ['Luxury Party', 'Perfect Patio', 'Cool Kitchen', 'Spooky Stuff', 'Movie Hangout', 'Romantic Garden', `Kids' Room`, 'Backyard', 'Vintage Glamour', 'Bowling Night', 'Fitness', 'Toddler', 'Laundry Day', 'My First Pet', 'Moschino', 'Knifty Knitting', 'Tiny Living', 'Paranormal'];
-const stuffPackData = {
-	'Luxury Party': {
+const stuffPackData = [
+	{
+		name: 'Luxury Party',
+		types: [],
 		specialFeatures: ['Ballroom'],
 	},
-	'Perfect Patio': {
-		specialFeatures: ['Patio'],
+	{
+		name: 'Perfect Patio',
+		types: [],
+		specialFeatures: ['Party Patio'],
 	},
-	'Movie Hangout': {
+	{
+		name: 'Movie Hangout',
+		types: [],
 		specialFeatures: ['Home Theater'],
 	},
-	'Fitness': {
+	{
+		name: 'Fitness',
+		types: [],
 		specialFeatures: ['Home Gym'],
 	},
-	'Laundry Day': {
+	{
+		name: 'Laundry Day',
+		types: [],
 		specialFeatures: ['Laundry Room'],
 	},
-	'Moschino': {
+	{
+		name: 'Moschino',
+		types: [],
 		specialFeatures: ['Photo Studio/Dark Room'],
 	},
-	'Tiny Living': {
+	{
+		name: 'Tiny Living',
 		types: ['Tiny House (any tier)', 'Tiny House (Tier 1)', 'Tiny House (Tier 2)', 'Tiny House (Tier 3)'],
+		specialFeatures: [],
 	},
-	'Paranormal': {
+	{
+		name: 'Paranormal',
 		types: ['Haunted Residential'],
 		specialFeatures: ['Attic'],
 	}
-}
-// kits
+];
+
+/**
+ * Each kit requires the following keys:
+ * name
+ * specialFeatures
+ */
 const kits = ['Bust the Dust', 'Country Kitchen', 'Throwback Fit', 'Courtyard Oasis'];
-const kitData = {
-	'Courtyard Oasis': {
+const kitData = [
+	{
+		name: 'Country Kitchen',
+		specialFeatures: ['Mud Room'],
+	},
+	{
+		name: 'Courtyard Oasis',
 		specialFeatures: ['Courtyard'],
 	},
-};
+];
 
-function addPackData(expansions, games, stuffs, kits) {
+function addPackData(datas, expansions, games, stuffs, kits) {
+	console.log('this is the base game data: ', datas);
 	for (const e of expansions) {
 		// adds data from selected expansion packs
-		const eData = expansions[e];
-		datas.worlds.push(...eData.worlds);
-		datas.traits.push(...eData.traits);
-		datas.types.push(...eData.types);
-		datas.specialFeatures.push(...eData.specialFeatures);
+		// console.log('expansion data is: ', e);
+		datas.worlds.push(...e.worlds);
+		datas.traits.push(...e.traits);
+		datas.types.push(...e.types);
+		datas.specialFeatures.push(...e.specialFeatures);
 	};
 
 	for (const g of games) {
 		// adds data from selected game packs
-		const gData = games[g];
-		datas.worlds.push(...gData.worlds);
-		datas.traits.push(...gData.traits);
-		datas.types.push(...gData.types);
-		datas.specialFeatures.push(...gData.specialFeatures);
+		datas.worlds.push(...g.worlds);
+		datas.traits.push(...g.traits);
+		datas.types.push(...g.types);
+		datas.specialFeatures.push(...g.specialFeatures);
 	};
 
 	for (const s of stuffs) {
 		//adds data from selected stuff packs
-		const sData = stuffs[s];
-		datas.types.push(...sData.types);
-		datas.specialFeatures.push(...sData.specialFeatures);
+		datas.types.push(...s.types);
+		datas.specialFeatures.push(...s.specialFeatures);
 	};
 
 	for (const k of kits) {
 		//adds data from selected kits
-		const kData = kits[k];
-		datas.specialFeatures.push(...kData.specialFeatures);
+		datas.specialFeatures.push(...k.specialFeatures);
 	};
 
 	return datas;
 }
 
-document.body.onload = function () {
-	addPackData(expansionPackData, gamePackData, stuffPackData, kitData);
+document.body.onclick = function () {
+	addPackData(datas, expansionPackData, gamePackData, stuffPackData, kitData);
+	console.log('this is the final data: ', datas)
 }
