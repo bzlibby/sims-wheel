@@ -1,3 +1,5 @@
+// const M = require("minimatch");
+
 /**
  * Establishes base game data
  */
@@ -210,43 +212,3 @@ const kitData = [
 		specialFeatures: ['Courtyard'],
 	},
 ];
-
-function addPackData(datas, expansions, games, stuffs, kits) {
-	console.log('this is the base game data: ', datas);
-	for (const e of expansions) {
-		// adds data from selected expansion packs
-		// console.log('expansion data is: ', e);
-		datas.worlds.push(...e.worlds);
-		datas.traits.push(...e.traits);
-		datas.types.push(...e.types);
-		datas.specialFeatures.push(...e.specialFeatures);
-	};
-
-	for (const g of games) {
-		// adds data from selected game packs
-		datas.worlds.push(...g.worlds);
-		datas.traits.push(...g.traits);
-		datas.types.push(...g.types);
-		datas.specialFeatures.push(...g.specialFeatures);
-	};
-
-	for (const s of stuffs) {
-		//adds data from selected stuff packs
-		datas.types.push(...s.types);
-		datas.specialFeatures.push(...s.specialFeatures);
-	};
-
-	for (const k of kits) {
-		//adds data from selected kits
-		datas.specialFeatures.push(...k.specialFeatures);
-	};
-
-	return datas;
-}
-
-document.body.onload = function() {
-	document.getElementById('spinner-button').onclick = function() {
-		addPackData(datas, expansionPackData, gamePackData, stuffPackData, kitData);
-		console.log('this is the final data: ', datas)
-	}
-}
