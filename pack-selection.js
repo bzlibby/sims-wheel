@@ -3,7 +3,7 @@
  */
 
 function checkThatBox(pack) {
-  const thatBox = document.getElementById('pack');
+  const thatBox = document.getElementById(pack);
   return thatBox.checked
 };
 

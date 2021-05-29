@@ -152,6 +152,7 @@ const gamePackData = [
  * types
  * specialFeatures
  */
+//TO DO: remove const stuffPacks; build checklist with a loop over stuffPackData names
 const stuffPacks = ['Luxury Party', 'Perfect Patio', 'Cool Kitchen', 'Spooky Stuff', 'Movie Hangout', 'Romantic Garden', `Kids' Room`, 'Backyard', 'Vintage Glamour', 'Bowling Night', 'Fitness', 'Toddler', 'Laundry Day', 'My First Pet', 'Moschino', 'Knifty Knitting', 'Tiny Living', 'Paranormal'];
 const stuffPackData = [
 	{
