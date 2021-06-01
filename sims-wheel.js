@@ -22,12 +22,12 @@ function createPackList (parent, content) {
 		// create the checkbox
 		const checkbox = document.createElement('input');
 		checkbox.type = 'checkbox';
-		checkbox.name = content[i];
-		checkbox.id = content[i];
+		checkbox.name = content[i].name;
+		checkbox.id = content[i].name;
 		// create the label for the checkbox
 		const label = document.createElement('label');
-		label.htmlFor = content[i];
-		label.appendChild(document.createTextNode(content[i]));
+		label.htmlFor = content[i].name;
+		label.appendChild(document.createTextNode(content[i].name));
 		// add a line break
 		const br = document.createElement('br');
 		// add checkbox item to page
