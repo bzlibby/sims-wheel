@@ -25,8 +25,7 @@ const datas = {
  * types
  * specialFeatures
  */
-const expansionPacks = ['Get to Work', 'Get Together', 'City Living', 'Cats & Dogs', 'Seasons', 'Get Famous', 'Island Living', 'Discover University', 'Eco Lifestyle', 'Snowy Escape'];
-const expansionPackData = [
+const expansionPacks = [
 	{
 		name: 'Get to Work',
 		worlds: ['Magnolia Promonade'],
@@ -54,6 +53,13 @@ const expansionPackData = [
 		traits: ['Breeding Grounds', 'Cat Friendly', 'Cat Hangout', 'Dog Friendly', 'Dog Hangout', 'Training Ground'],
 		types: [],
 		specialFeatures: ['Pet Room']
+	},
+	{
+		name: 'Seasons',
+		worlds: [],
+		traits: [],
+		types: [],
+		specialFeatures: ['Greenhouse'],
 	},
 	{
 		name: 'Get Famous',
@@ -100,35 +106,13 @@ const expansionPackData = [
  * types
  * specialFeatures
  */
-const gamePacks = ['Outdoor Retreat', 'Spa Day', 'Dine Out', 'Vampires', 'Parenthood', 'Jungle Adventure', 'Realm of Magic', 'StrangerVille', 'Journey to Batuu'];
-const gamePackData = [
+const gamePacks = [
 	{
-		name: 'Vampires',
-		worlds: ['Forgotten Hollow'],
-		traits: ['On a Dark Ley Line', 'Registered Vampire Lair', 'Vampire Nexus'],
-		types: [],
-		specialFeatures: ['Graveyard'],
-	},
-	{
-		name: 'Jungle Adventure',
+		name: 'Outdoor Retreat',
 		worlds: [],
-		traits: ['Creepy Crawlies', 'Peace and Quiet'],
+		traits: [],
 		types: [],
 		specialFeatures: [],
-	},
-	{
-		name: 'Realm of Magic',
-		worlds: ['Glimmerbrook'],
-		traits: [],
-		types: [],
-		specialFeatures: ['Magic Room']
-	},
-	{
-		name: 'Strangerville',
-		worlds: ['Strangerville'],
-		traits: [],
-		types: [],
-		specialFeatures: ['Bunker'],
 	},
 	{
 		name: 'Spa Day',
@@ -138,11 +122,60 @@ const gamePackData = [
 		specialFeatures: ['Home Spa'],
 	},
 	{
+		name: 'Dine Out',
+		worlds: [],
+		traits: [],
+		types: [],
+		specialFeatures: [],
+	},
+	{
+		name: 'Vampires',
+		worlds: ['Forgotten Hollow'],
+		traits: ['On a Dark Ley Line', 'Registered Vampire Lair', 'Vampire Nexus'],
+		types: [],
+		specialFeatures: ['Graveyard'],
+	},
+	{
 		name: 'Parenthood',
 		worlds: [],
 		traits: [],
 		types: [],
 		specialFeatures: ['Play Room']
+	},
+	{
+		name: 'Jungle Adventure',
+		worlds: [],
+		traits: ['Creepy Crawlies', 'Peace and Quiet'],
+		types: [],
+		specialFeatures: [],
+	},
+	{
+		name: 'Strangerville',
+		worlds: ['Strangerville'],
+		traits: [],
+		types: [],
+		specialFeatures: ['Bunker'],
+	},
+	{
+		name: 'Realm of Magic',
+		worlds: ['Glimmerbrook'],
+		traits: [],
+		types: [],
+		specialFeatures: ['Magic Room']
+	},
+	{
+		name: 'Journey to Batuu',
+		worlds: [],
+		traits: [],
+		types: [],
+		specialFeatures: [],
+	},
+	{
+		name: 'Dream House Decorator',
+		worlds: [],
+		traits: [],
+		types: [],
+		specialFeatures: [],
 	}
 ];
 
@@ -152,9 +185,7 @@ const gamePackData = [
  * types
  * specialFeatures
  */
-//TO DO: remove const stuffPacks; build checklist with a loop over stuffPackData names
-const stuffPacks = ['Luxury Party', 'Perfect Patio', 'Cool Kitchen', 'Spooky Stuff', 'Movie Hangout', 'Romantic Garden', `Kids' Room`, 'Backyard', 'Vintage Glamour', 'Bowling Night', 'Fitness', 'Toddler', 'Laundry Day', 'My First Pet', 'Moschino', 'Knifty Knitting', 'Tiny Living', 'Paranormal'];
-const stuffPackData = [
+const stuffPacks = [
 	{
 		name: 'Luxury Party',
 		types: [],
@@ -166,9 +197,44 @@ const stuffPackData = [
 		specialFeatures: ['Party Patio'],
 	},
 	{
+		name: 'Cool Kitchen',
+		types: [],
+		specialFeatures: [],
+	},
+	{
+		name: 'Spooky Stuff',
+		types: [],
+		specialFeatures: [],
+	},
+	{
 		name: 'Movie Hangout',
 		types: [],
 		specialFeatures: ['Home Theater'],
+	},
+	{
+		name: 'Romantic Garden',
+		types: [],
+		specialFeatures: ['Flower/decorative garden'],
+	},
+	{
+		name: 'Kids Room',
+		types: [],
+		specialFeatures: [],
+	},
+	{
+		name: 'Backyard',
+		types: [],
+		specialFeatures: [],
+	},
+	{
+		name: 'Vintage Glamour',
+		types: [],
+		specialFeatures: [],
+	},
+	{
+		name: 'Bowling Night',
+		types: [],
+		specialFeatures: ['Bowling alley'],
 	},
 	{
 		name: 'Fitness',
@@ -176,9 +242,19 @@ const stuffPackData = [
 		specialFeatures: ['Home Gym'],
 	},
 	{
+		name: 'Toddler',
+		types: [],
+		specialFeatures: [],
+	},
+	{
 		name: 'Laundry Day',
 		types: [],
 		specialFeatures: ['Laundry Room'],
+	},
+	{
+		name: 'My First Pet',
+		types: [],
+		specialFeatures: [],
 	},
 	{
 		name: 'Moschino',
@@ -189,6 +265,11 @@ const stuffPackData = [
 		name: 'Tiny Living',
 		types: ['Tiny House (any tier)', 'Tiny House (Tier 1)', 'Tiny House (Tier 2)', 'Tiny House (Tier 3)'],
 		specialFeatures: [],
+	},
+	{
+		name: 'Nifty Knitting',
+		types: [],
+		specialFeatures: ['Sewing/crafting room'],
 	},
 	{
 		name: 'Paranormal',
@@ -202,11 +283,18 @@ const stuffPackData = [
  * name
  * specialFeatures
  */
-const kits = ['Bust the Dust', 'Country Kitchen', 'Throwback Fit', 'Courtyard Oasis'];
-const kitData = [
+const kits = [
+	{
+		name: 'Bust the Dust',
+		specialFeatures: [],
+	},
 	{
 		name: 'Country Kitchen',
 		specialFeatures: ['Mud Room'],
+	},
+	{
+		name: 'Throwback Fit',
+		specialFeatures: [],
 	},
 	{
 		name: 'Courtyard Oasis',
