@@ -5,21 +5,21 @@ const {expect} = require('chai');
         flavors: [],
     };
     expect(tea, 'tea has flavors').to.haveOwnProperty('flavors');
-    expect(tea.flavors, 'tea has 3 flavors').to.have.lengthOf(3); */
+    expect(tea.flavors, 'tea has 3 flavors').to.have.lengthOf(3); 
+}); */
 
-
-// TODO: make a better description
-describe('Calling the load function', function() {
-    xit('should generate a list of pack names');
+describe('Loading the page', function() {
+    xit('should generate the list of pack names');
+    xit('should create a checklist of packs');
 });
 
-describe('Adding a pack to the selected packs', function() {
-    xit('should find its data in the full pack set', function() {
-    });
-    xit('should add its data to the full data set', function() {
-    });
-});
+describe('Getting the checkboxes', function() {
+    xit('should return a list of checked packs');
+})
 
-describe('Running the spin function', function() {
-    xit('should return random challenge criteria');
+describe('Spinning the wheel', function() {
+    xit('should get the checkboxes');
+    xit('should filter the pack properties for selected packs');
+    xit('should generate a random set of properties from the filtered pack properties');
+    xit('should display the randomly generated set of properties to the user')
 });
