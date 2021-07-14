@@ -22,5 +22,7 @@ describe('Spinning the wheel', function() {
     xit('should filter the pack properties for selected packs');
     xit('should generate a random number');
     xit('should generate a random set of properties from the filtered pack properties');
-    xit('should display the randomly generated set of properties to the user')
+    xit('should generate a random pack limit based on the selected packs');
+    xit('should randomly set cc allowed to true or false');
+    xit('should display the randomly generated set of properties and pack/content limits to the user')
 });
