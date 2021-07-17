@@ -1,11 +1,8 @@
 :root {
-	--d-blue: #014325;
-  --m-blue: #1d7453;
-  --l-blue: #74b59a;
   --d-green: #447e36;
   --m-green: #80b76b;
   --l-green: #b4d99f;
-  --white-ish: #e4fae7;
+  --white-ish: rgba(229, 250, 232, 0.75);
   --white: #fff;
 	--black: #000;
 	--transblack: rgb(0, 0, 0, 0.8);
@@ -27,19 +24,19 @@ header {
 	margin-top: 50px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	background-color: var(--d-green);
+	background-color: var(--white-ish);
 	border-radius: 10px;
 }
 
 header h1 {
   font-family: var(--titlefont);
-  color: var(--white-ish);
+  color: var(--m-green);
+	text-shadow: var(--d-green) 1px 1px 1px;
   margin-bottom: 5px;
 }
 
 h1 {
 	font-size: 50px;
-	background-color: var(--d-green);
 	padding-top: 10px;
 	border-radius: 5px;
 	margin-left: 10px;
@@ -52,12 +49,12 @@ h2 {
 }
 
 a {
-	color: var(--d-blue);
+	color: var(--d-green);
   font-style: bold;
 }
 
 a:hover {
-	color: var(--l-blue);
+	color: var(--l-green);
 	background-color: var(--white-ish);
 	transition: 400ms ease-in-out;
 	border-radius: 5px;
@@ -72,14 +69,16 @@ a:hover {
 	font-size: 12px;
 }
 
-#pack-selection h3 {
+h3 {
 	font-family: var(--headerfont);
-	font-size: 24px;
+	font-size: 30px;
 	text-align: center;
-	background-color: var(--d-green);
+	background-color: var(--l-green);
+	color: var(--d-green);
 	padding-top: 5px;
 	border-radius: 5px;
 	margin-top: 0px;
+	text-shadow: var(--white-ish) 1px 1px 1px
 }
 
 #pack-selection h4 {
@@ -87,9 +86,15 @@ a:hover {
 	font-size: 16px;
 	margin-bottom: 0px;
 }
-.pack-list {
+
+/* TODO: style the checkboxes to look better/be in an actual list */
+#pack-list {
 	margin-top: -5px;
+	display: inline-grid;
+	grid-template-columns: repeat(5, 20px [col-start] 150px [col-start]);
+	grid-row-gap: 10px;
 }
+
 #spinner {
 	margin-top: 15px;
 	text-align: center;
@@ -98,36 +103,28 @@ a:hover {
 button {
   display: inline-block;
 	border: none;
-	border-radius: 5px;
-  padding: 10px 40px;
+	border-radius: 100px;
 	padding: 10px;
-	width: 100%;
   text-decoration: none;
-	background: var(--d-green);
-  color: var(--black);
-	font-family: var(--headerfont);
-  font-size: 18px;
+	background: var(--l-green);
+  color: var(--d-green);
+	font-family: var(--titlefont);
+  font-size: 50px;
   text-align: center;
-  transition: background 250ms ease-in-out, 
-              transform 150ms ease;
-  transition: 400ms ease-in-out;
+	text-shadow: var(--white-ish) 1px 1px 1px;
+  transition: 200ms ease-in-out;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 
 button:hover {
-		background: var(--d-green);
-		color: var(--l-green);
+		background: var(--m-green);
     font-style: bold;
 }
 
-button:focus {
-	background: var(--d-blue);
-	outline-width: 0px;
-}
-
 button:active {
-	color: var(--white-ish);
+	background-color: var(--white-ish);
+	transform: rotate(-540deg)
 }
 /* end button style */
 
@@ -139,16 +136,6 @@ button:active {
 	border-radius: 10px;
 	font-family: var(--bodyfont);
 	font-size: 12px;
-}
-
-#results h3 {
-	font-family: var(--headerfont);
-	font-size: 24px;
-	text-align: center;
-	background-color: var(--d-green);
-	padding-top: 5px;
-	border-radius: 5px;
-	margin-top: 0px;
 }
 
 table {

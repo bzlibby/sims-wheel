@@ -1,29 +1,16 @@
-/* this file includes the properties for every pack, including the base game (as a pack) and a fictional pack (for testing)
+/* this file includes the properties for every pack, including the base game (as a pack)
  * 
  * it was last updated: < NULL >
  */
 
-const packProperties = [
-  {
-    name: 'Base Game',
-    worlds: ['Willow Creek', 'Oasis Springs', 'Newcrest'],
-    lotTraits = ['Great Acoustics', 'Fast Internet', 'Homey', 'Science Lair', 'Convival', 'Natural Light', 'Bracing Breezes', 'Private Dwelling', 'Teen Neighborhood', 'Off-the-Grid', 'Clothing Optional'],
-    specialFeatures = [ /* add these after adding special features based on dlc */ ],
-    lotSizes = ['20x15 / 20x20', '30x20 / 30x30', '40x30 / 40x40', '50x40 / 50/50', '64x64'],
-    householdSizes = ['1 sim', '2-3 sims', '3-5 sims', '6-8 sims'],
-    archStyles = ['Spanish Colonial', 'Georgian', 'Manufactured', 'Greek Revival', 'Gothic', 'Italiante', 'Colonial Revival', 'Renessaince Revival', 'Queen Anne', 'Mission', 'Tudor', 'Neoclassical', 'Prairie', 'French Eclectic', 'Crafstman', 'Ranch', 'Modern/Contemporary', 'Brutalist/Bauhaus', 'Industrial', 'McMansion', 'Victorian', 'Mediterranean'],
-    // styles heavily based on 'the Architecture of American Houses' by Pop Chart Labs: https://99percentinvisible.org/article/style-house-visual-guides-domestic-architectural-designs/
-    colorSchemes = ['Basics', 'Neutrals', 'Brights', 'Pastels', 'Cool Colors', 'Warm Colors', 'Greyscale']
-  },
+
+// TODO: figure out why impot/export isn't working
+export const packProperties = [
+  // EXPANSION PACKS
   {
     name: 'Get to Work',
     worlds: ['Magnolia Promenade'],
     specialFeatures: ['Storefront', 'Science Lab']
-  },
-  {
-    name: 'Get To Work',
-    worlds: ['Magnolia Promenade'],
-    specialFeatures = ['Storefront', 'Science Lab']
   },
   { 
     name: 'Get Together',
@@ -33,7 +20,8 @@ const packProperties = [
   {
     name: 'City Living',
     lotTypes: ['Apartment/Penthouse'],
-    lotTraits: [`Chef's Kitchen`, 'Quake Zone', 'Good Schools', 'Mean Vibe', 'Home Studio', 'Sunny Aspect', 'Cursed', 'Grody', 'Gremlins', 'Penny Pixies', 'Party Place', 'Filthy', 'Haunted', 'Romantic Aura', 'Great Soil', `Child's Play`, 'On Ley Line', 'Gnomes'],
+    lotTraits: [`Chef's Kitchen`, 'Good Schools', 'Mean Vibe', 'Home Studio', 'Sunny Aspect', 'Penny Pixies', 'Party Place', 'Romantic Aura', 'Great Soil', `Child's Play`, 'On Ley Line', 'Gnomes'],
+    lotChallenges: ['Spooky', 'Filty', 'Gremlins', 'Grody', 'Cursed', 'Quake Zone'],
     specialFeatures: ['Karaoke Space'],
   },
   {
@@ -48,18 +36,20 @@ const packProperties = [
   {
     name: 'Island Living',
     worlds: ['Sulani'],
-    lotTraits: ['Oceanic Paradise', 'Island Spirits', 'Volcanic Activity'],
+    lotTraits: ['Island Spirits'],
+    lotChallenges: ['Volcanic Activity']
   },
   {
     name: 'Discover University',
     worlds: ['Britechester'],
     lotTraits: ['Study Spot', 'University Student Hangout'],
-    specialFeatures: ['Study/Library']
+    specialFeatures: ['Library']
   },
   {
-    name: 'Eco Living',
+    name: 'Eco Lifestyle',
     worlds: ['Evergreen Harbor'],
-    lotTraits: ['Eco Lot', 'Geothermal', 'Landfill Lot', 'Natural Well', 'Reduce and Recycle'],
+    lotTraits: ['Eco Lot', 'Geothermal', 'Natural Well'],
+    lotChallenges: ['Landfill Lot', 'Reduce and Recylce'],
     specialFeatures: ['Eco Roof']
   },
   {
@@ -72,5 +62,136 @@ const packProperties = [
     worlds: ['Henford-on-Bagley'],
     lotChallenges: ['Simple Living', 'Wild Foxes'],
     specialFeatures: ['Farm', 'Cellar']
+  },
+  // GAME PACKS
+  {
+    name: 'Outdoor Retreat',
+    worlds: ['Granite Falls'],
+    specialFeatures: ['Tree House'],
+    archStyles: ['Cabin']
+  },
+  {
+    name: 'Spa Day',
+    specialFeatures: ['Home Spa']
+  },
+  {
+    name: 'Dine Out',
+  },
+  {
+    name: 'Vampires',
+    worlds: ['Forgotton Hollow'],
+    lotTraits: ['On a Dark Ley Line', 'Registered Vampire Lair', 'Vampire Nexus'],
+    specialFeatures: ['Graveyard']
+  },
+  {
+    name: 'Parenthood',
+    specialFeatures: ['Jungle Gym'],
+  },
+  {
+    name: 'Jungle Adventure',
+    worlds: ['Selvadorada'],
+    lotTraits: ['Peace and Quiet'],
+    lotChallenges: ['Creepy Crawlies']
+  },
+  {
+    name: 'Strangerville',
+    worlds: ['Strangerville'],
+    specialFeatures: ['Bunker', 'Hidden/Secret Room']
+  },
+  {
+    name: 'Realm of Magic',
+    worlds: ['Glimmerbrook'],
+    specialFeatures: ['Magic Room']
+  },
+  {
+    name: 'Journey to Batuu',
+    specialFeatures: ['Fandom Room']
+  },
+  {
+    name: 'Dream Home Decorator',
+    specialFeatures: ['Renovation of Existing Build', 'Walk-In Closets']
+  },
+  // STUFF PACKS
+  {
+    name: 'Luxury Party'
+  },
+  {
+    name: 'Perfect Patio'
+  },
+  {
+    name: 'Cool Kitchen',
+    specialFeatures: ['Walk-In Pantry']
+  },
+  {
+    name: 'Spooky Stuff'
+  },
+  {
+    name: 'Movie Hangout',
+    specialFeatures: ['Home Theater']
+  },
+  {
+    name: 'Romantic Garden',
+    specialFeatures: ['Flower Garden']
+  },
+  {
+    name: 'Kids Room',
+    specialFeatures: ['Play Room']
+  },
+  {
+    name: 'Backyard Stuff'
+  },
+  {
+    name: 'Vintage Glamour',
+    specialFeatures: ['Formal Dining Room', 'Wine Cellar']
+  },
+  {
+    name: 'Bowling Night',
+    specialFeatures: ['Bowling Alley']
+  },
+  {
+    name: 'Fitness Stuff',
+    specialFeatures: ['Rock Climbing Wall']
+  },
+  {
+    name: 'Toddler Stuff',
+    specialFeatures: ['Nursery']
+  },
+  {
+    name: 'Laundry Day',
+    specialFeatures: ['Laundry Room']
+  },
+  {
+    name: 'My First Pet'
+  },
+  {
+    name: 'Moschino',
+    specialFeatures: ['Photo Studio']
+  },
+  {
+    name: 'Tiny Living',
+    specialFeatures: ['Tiny Home (lot type)']
+  },
+  {
+    name: 'Nifty Knitting',
+    specialFeatures: ['Craft Room']
+  },
+  {
+    name: 'Paranormal Stuff',
+    specialFeatures: ['Haunted House (lot type)', 'Attic']
+  },
+  // KITS
+  {
+    name: 'Bust the Dust'
+  },
+  {
+    name: 'Country Kitchen'
+  },
+  {
+    name: 'Throwback Fit'
+  },
+  {
+    name: 'Courtyard Oasis',
+    specialFeatures: ['Courtyard'],
+    archStyles: ['Moroccan']
   }
-]
+];
