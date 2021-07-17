@@ -8,187 +8,339 @@ const packProperties = [
   {
     name: 'Get to Work',
     worlds: ['Magnolia Promenade'],
-    specialFeatures: ['Storefront', 'Science Lab']
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Storefront', 'Science Lab'],
+    archStyles: []
   },
   { 
     name: 'Get Together',
     worlds: ['Windenburg'],
-    specialFeatures: ['Dance Studio', 'Home Arcade']
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Dance Studio', 'Home Arcade'],
+    archStyles: []
   },
   {
     name: 'City Living',
-    lotTypes: ['Apartment/Penthouse'],
+    worlds: [],
     lotTraits: [`Chef's Kitchen`, 'Good Schools', 'Mean Vibe', 'Home Studio', 'Sunny Aspect', 'Penny Pixies', 'Party Place', 'Romantic Aura', 'Great Soil', `Child's Play`, 'On Ley Line', 'Gnomes'],
     lotChallenges: ['Spooky', 'Filty', 'Gremlins', 'Grody', 'Cursed', 'Quake Zone'],
     specialFeatures: ['Karaoke Space'],
+    archStyles: ['Apartment/Penthouse']
   },
   {
     name: 'Cats and Dogs',
+    worlds: ['Brindleton Bay'],
     lotTraits: ['Breeding Grounds', 'Cat Friendly/Hangout', 'Dog Friendly/Hangout', 'Training Grounds'],
-    specialFeatures: [`Pet's Room`]
+    lotChallenges: [],
+    specialFeatures: [`Pet's Room`],
+    archStyles: []
   },
   {
     name: 'Seasons',
-    specialFeatures: ['Greenhouse', 'Seasonal/Holiday Dispaly', 'Three/Four Season Porch']
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Greenhouse', 'Seasonal/Holiday Dispaly', 'Three/Four Season Porch'],
+    archStyles: []
   },
   {
     name: 'Island Living',
     worlds: ['Sulani'],
     lotTraits: ['Island Spirits'],
-    lotChallenges: ['Volcanic Activity']
+    lotChallenges: ['Volcanic Activity'],
+    specialFeatures: [],
+    archStyles: ['Island/Beach']
   },
   {
     name: 'Discover University',
     worlds: ['Britechester'],
     lotTraits: ['Study Spot', 'University Student Hangout'],
-    specialFeatures: ['Library']
+    lotChallenges: [],
+    specialFeatures: ['Library'],
+    archStyles: []
   },
   {
     name: 'Eco Lifestyle',
     worlds: ['Evergreen Harbor'],
     lotTraits: ['Eco Lot', 'Geothermal', 'Natural Well'],
     lotChallenges: ['Landfill Lot', 'Reduce and Recylce'],
-    specialFeatures: ['Eco Roof']
+    specialFeatures: ['Eco Roof'],
+    archStyles: ['Recycled/Eco Modern']
   },
   {
     name: 'Snowy Escape',
     worlds: ['Mt. Komorebi'],
-    specialFeatures: ['Suana/Hot Spring']
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Suana/Hot Spring'],
+    archStyles: ['Traditional Japanese']
   },
   {
     name: 'Cottage Living',
     worlds: ['Henford-on-Bagley'],
+    lotTraits: [],
     lotChallenges: ['Simple Living', 'Wild Foxes'],
-    specialFeatures: ['Farm', 'Cellar']
+    specialFeatures: ['Farm', 'Cellar'],
+    archStyles: ['Cottage']
   },
   // GAME PACKS
   {
     name: 'Outdoor Retreat',
     worlds: ['Granite Falls'],
+    lotTraits: [],
+    lotChallenges: [],
     specialFeatures: ['Tree House'],
     archStyles: ['Cabin']
   },
   {
     name: 'Spa Day',
-    specialFeatures: ['Home Spa']
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Home Spa'],
+    archStyles: []
   },
   {
     name: 'Dine Out',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: [],
+    archStyles: []
   },
   {
     name: 'Vampires',
     worlds: ['Forgotton Hollow'],
     lotTraits: ['On a Dark Ley Line', 'Registered Vampire Lair', 'Vampire Nexus'],
-    specialFeatures: ['Graveyard']
+    lotChallenges: [],
+    specialFeatures: ['Graveyard'],
+    archStyles: []
   },
   {
     name: 'Parenthood',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
     specialFeatures: ['Jungle Gym'],
+    archStyles: []
   },
   {
     name: 'Jungle Adventure',
     worlds: ['Selvadorada'],
     lotTraits: ['Peace and Quiet'],
-    lotChallenges: ['Creepy Crawlies']
+    lotChallenges: ['Creepy Crawlies'],
+    specialFeatures: [],
+    archStyles: []
   },
   {
     name: 'Strangerville',
     worlds: ['Strangerville'],
-    specialFeatures: ['Bunker', 'Hidden/Secret Room']
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Bunker', 'Hidden/Secret Room'],
+    archStyles: []
   },
   {
     name: 'Realm of Magic',
     worlds: ['Glimmerbrook'],
-    specialFeatures: ['Magic Room']
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Magic Room'],
+    archStyles: ['Fantasy']
   },
   {
     name: 'Journey to Batuu',
-    specialFeatures: ['Fandom Room']
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Fandom Room'],
+    archStyles: ['SciFi/Futuristic']
   },
   {
     name: 'Dream Home Decorator',
-    specialFeatures: ['Renovation of Existing Build', 'Walk-In Closets']
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Renovation of Existing Build', 'Walk-In Closets'],
+    archStyles: []
   },
   // STUFF PACKS
   {
-    name: 'Luxury Party'
+    name: 'Luxury Party',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: [],
+    archStyles: []
   },
   {
-    name: 'Perfect Patio'
+    name: 'Perfect Patio',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Patio'],
+    archStyles: [] 
   },
   {
     name: 'Cool Kitchen',
-    specialFeatures: ['Walk-In Pantry']
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Walk-In Pantry'],
+    archStyles: []
   },
   {
-    name: 'Spooky Stuff'
+    name: 'Spooky Stuff',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: [],
+    archStyles: []
   },
   {
     name: 'Movie Hangout',
-    specialFeatures: ['Home Theater']
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Home Theater'],
+    archStyles: []
   },
   {
     name: 'Romantic Garden',
-    specialFeatures: ['Flower Garden']
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Flower Garden'],
+    archStyles: []
   },
   {
     name: 'Kids Room',
-    specialFeatures: ['Play Room']
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Play Room'],
+    archStyles: []
   },
   {
-    name: 'Backyard Stuff'
+    name: 'Backyard Stuff',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Deck', 'Large Backyard'],
+    archStyles: []
   },
   {
     name: 'Vintage Glamour',
-    specialFeatures: ['Formal Dining Room', 'Wine Cellar']
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Formal Dining Room', 'Wine Cellar'],
+    archStyles: []
   },
   {
     name: 'Bowling Night',
-    specialFeatures: ['Bowling Alley']
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Bowling Alley'],
+    archStyles: []
   },
   {
     name: 'Fitness Stuff',
-    specialFeatures: ['Rock Climbing Wall']
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Rock Climbing Wall'],
+    archStyles: []
   },
   {
     name: 'Toddler Stuff',
-    specialFeatures: ['Nursery']
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Nursery'],
+    archStyles: []
   },
   {
     name: 'Laundry Day',
-    specialFeatures: ['Laundry Room']
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Laundry Room'],
+    archStyles: []
   },
   {
-    name: 'My First Pet'
+    name: 'My First Pet',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: [],
+    archStyles: []
   },
   {
     name: 'Moschino',
-    specialFeatures: ['Photo Studio']
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Photo Studio'],
+    archStyles: []
   },
   {
     name: 'Tiny Living',
-    specialFeatures: ['Tiny Home (lot type)']
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Tiny Home (lot type)'],
+    archStyles: []
   },
   {
     name: 'Nifty Knitting',
-    specialFeatures: ['Craft Room']
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Craft Room'],
+    archStyles: []
   },
   {
     name: 'Paranormal Stuff',
-    specialFeatures: ['Haunted House (lot type)', 'Attic']
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Haunted House (lot type)', 'Attic'],
+    archStyles: []
   },
   // KITS
   {
-    name: 'Bust the Dust'
+    name: 'Bust the Dust',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: [],
+    archStyles: []
   },
   {
-    name: 'Country Kitchen'
+    name: 'Country Kitchen',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Mud Room'],
+    archStyles: ['French Country']
   },
   {
-    name: 'Throwback Fit'
+    name: 'Throwback Fit',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: [],
+    archStyles: []
   },
   {
     name: 'Courtyard Oasis',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
     specialFeatures: ['Courtyard'],
     archStyles: ['Moroccan']
   }
@@ -208,11 +360,12 @@ function pageLoading(packData) {
     const checkbox = document.createElement('input');
     const label = document.createElement('label');
     checkbox.type = 'checkbox';
-    checkbox.value = allPacks[j];
+    checkbox.id = allPacks[j];
     checkbox.name = 'pack';
     packDiv.appendChild(checkbox);
     packDiv.appendChild(label);
     label.appendChild(document.createTextNode(allPacks[j]));
+    label.htmlFor = allPacks[j];
   };
 };
 
@@ -221,7 +374,7 @@ function wheelSpin () {
   const packSelection = function() {
     const checkboxes = document.querySelectorAll(`input[type=checkbox]:checked`);
     checkboxes.forEach((checkbox) => {
-        selectedPackNames.push(checkbox.value);
+        selectedPackNames.push(checkbox.id);
     });
     return selectedPackNames;
   };
@@ -229,7 +382,7 @@ function wheelSpin () {
   console.log('These packs have been checked: ' + packSelection());
   const selectedPackProperties = [];
   for (let i = 0; i < selectedPackNames.length; i++) {
-    selectedPackProperties.push(packProperties.filter(x => x.name === selectedPackNames[i]));
+    selectedPackProperties.push(...packProperties.filter(x => x.name === selectedPackNames[i]));
   };
   const possibleProperties = {
       worlds: ['Willow Creek', 'Oasis Springs', 'Newcrest'],
@@ -240,15 +393,38 @@ function wheelSpin () {
       householdSizes: ['1 sim', '2-3 sims', '3-5 sims', '6-8 sims'],
       archStyles: ['Spanish Colonial', 'Georgian', 'Manufactured', 'Greek Revival', 'Gothic', 'Italiante', 'Colonial Revival', 'Renessaince Revival', 'Queen Anne', 'Mission', 'Tudor', 'Neoclassical', 'Prairie', 'French Eclectic', 'Crafstman', 'Ranch', 'Modern/Contemporary', 'Brutalist/Bauhaus', 'Industrial', 'McMansion', 'Victorian', 'Mediterranean'],
       // styles heavily based on 'the Architecture of American Houses' by Pop Chart Labs: https://99percentinvisible.org/article/style-house-visual-guides-domestic-architectural-designs/
-      colorSchemes: ['Basics', 'Neutrals', 'Brights', 'Pastels', 'Cool Colors', 'Warm Colors', 'Greyscale']
+      colorSchemes: ['Basics', 'Neutrals', 'Brights', 'Pastels', 'Cool Colors', 'Warm Colors', 'Greyscale'],
+      packLimits: ['No Limit', 'Base Game Only', `1 Pack (Builder's Choice)`]
   };
   for (const pack of selectedPackProperties) {
     possibleProperties.worlds.push(...pack.worlds);
-  }
-  console.log(possibleProperties.worlds)
-  // xit('should filter the pack properties for ${getCheckboxes}')
-  // xit('should generate a random set of properties from the filtered pack properties')
-  // xit('should generate a random pack limit based on the selected packs');
-  // xit('should randomly set cc allowed to true or false');
+  };
+  for (const pack of selectedPackProperties) {
+    possibleProperties.lotTraits.push(...pack.lotTraits);
+  };
+  for (const pack of selectedPackProperties) {
+    possibleProperties.lotChallenges.push(...pack.lotChallenges);
+  };
+  for (const pack of selectedPackProperties) {
+    possibleProperties.specialFeatures.push(...pack.specialFeatures);
+  };
+  for (const pack of selectedPackProperties) {
+    possibleProperties.archStyles.push(...pack.archStyles);
+  };
+  console.log('These are the possible properties for your build: ');
+  console.log(possibleProperties);
+  const challengeProperties = {
+    world: possibleProperties.worlds[Math.floor(Math.random() * possibleProperties.worlds.length)],
+    lotTraits: possibleProperties.lotTraits.sort(() => 0.5 - Math.random()).slice(0,3),
+    lotChallenge: possibleProperties.lotChallenges[Math.floor(Math.random() * possibleProperties.lotChallenges.length)],
+    specialFeature: possibleProperties.specialFeatures[Math.floor(Math.random() * possibleProperties.specialFeatures.length)],
+    lotSize: possibleProperties.lotSizes[Math.floor(Math.random() * possibleProperties.lotSizes.length)],
+    householdSize: possibleProperties.householdSizes[Math.floor(Math.random() * possibleProperties.householdSizes.length)],
+    archStyle: possibleProperties.archStyles[Math.floor(Math.random() * possibleProperties.archStyles.length)],
+    colorScheme: possibleProperties.colorSchemes[Math.floor(Math.random() * possibleProperties.colorSchemes.length)],
+    packLimit: possibleProperties.packLimits[Math.floor(Math.random() * possibleProperties.packLimits.length)],
+    ccLimit: Math.random() < 0.5
+  };
+console.log(challengeProperties);
   // xit('should display the randomly generate set of properties to the user)
 };
