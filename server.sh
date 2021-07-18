@@ -1,0 +1,1 @@
+docker run --name some-nginx -v /home/bzlibby/coding/sims-wheel:/usr/share/nginx/html:ro --rm -p 8080:80 nginx
