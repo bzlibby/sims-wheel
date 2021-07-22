@@ -43,7 +43,7 @@ export const packProperties = [
   {
     name: 'Cats and Dogs',
     worlds: ['Brindleton Bay'],
-    lotTraits: ['Breeding Grounds', 'Cat Friendly/Hangout', 'Dog Friendly/Hangout', 'Training Grounds'],
+    lotTraits: ['Breeding Grounds', 'Cat Hangout', 'Dog Hangout', 'Training Grounds'],
     lotChallenges: [],
     specialFeatures: [`Pet's Room`],
     archStyles: []
@@ -67,7 +67,7 @@ export const packProperties = [
   {
     name: 'Discover University',
     worlds: ['Britechester'],
-    lotTraits: ['Study Spot', 'University Student Hangout'],
+    lotTraits: ['Study Spot'],
     lotChallenges: [],
     specialFeatures: ['Library'],
     archStyles: []
@@ -95,6 +95,14 @@ export const packProperties = [
     lotChallenges: ['Simple Living', 'Wild Foxes'],
     specialFeatures: ['Farm', 'Cellar'],
     archStyles: ['Cottage']
+  },
+  {
+    name: 'Get Famous',
+    worlds: ['Del Sol Valley'],
+    lotTraits: ['Celebrity Home'],
+    lotChallenges: [],
+    specialFeatures: ['Recording Studio', 'Rehearsal Space'],
+    archStyles: []
   },
   // GAME PACKS
   {
