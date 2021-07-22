@@ -4,7 +4,7 @@
 		{
       "label": "Run tests",
       "type": "shell",
-      "command": "yarn mocha --check-leaks --forbid-only --require esm --recursive --sort \"test/**/*.js\"",
+      "command": "yarn nyc --reporter=text mocha --forbid-only --require esm --recursive --sort \"test/**/*.js\"",
       "group": "test",
       "presentation": {
         "reveal": "always",
