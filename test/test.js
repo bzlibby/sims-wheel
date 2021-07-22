@@ -1,15 +1,37 @@
-const {expect} = require('chai');
+import { expect } from 'chai';
+import { JSDOM } from 'jsdom';
+import { pageLoading, wheelSpin } from '../wheel.js';
 
-/* it('should check the tea', function() {
-    const tea = {
-        flavors: [],
-    };
-    expect(tea, 'tea has flavors').to.haveOwnProperty('flavors');
-    expect(tea.flavors, 'tea has 3 flavors').to.have.lengthOf(3); 
-}); */
+const testPack = [
+    {
+        name: 'Programming Paradise',
+        worlds: ['Ubuntu'],
+        lotTraits: ['Free Internet'],
+        lotChallenges: ['Noisy Neighbors'],
+        specialFeatures: ['Hidden Office'],
+        archStyles: ['Remote']
+    }
+]
 
 describe('Loading the page', function() {
-    xit('should generate the list of pack names');
+	beforeEach(() => {
+	const dom = new JSDOM(
+    `<html>
+			 <body>
+			 	<div id='pack-list'></div>
+       </body>
+     </html>`,
+     { url: 'http://localhost' },
+  );
+
+  global.window = dom.window;
+  global.document = dom.window.document;
+});
+
+		it('should generate the list of pack names', function() {
+			pageLoading(testPack)
+		});
+		
     xit('should create a checklist of packs');
 });
 

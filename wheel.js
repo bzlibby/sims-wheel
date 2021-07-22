@@ -2,10 +2,11 @@
  * see test.js for full script requirements
  */
 
-// TODO: figure out why import/export isn't working and then remove this const
 import { packProperties } from './packprops.js';
-document.onload = pageLoading(packProperties);
-document.getElementById('spinner-button').onclick = wheelSpin;
+if (typeof document !== 'undefined') {
+  document.onload = pageLoading(packProperties);
+  document.getElementById('spinner-button').onclick = wheelSpin
+};
 
 function pageLoading(packData) {
   const allPacks = [];
@@ -87,3 +88,5 @@ function wheelSpin () {
 console.log(challengeProperties);
   // xit('should display the randomly generate set of properties to the user)
 };
+
+export { pageLoading, wheelSpin };

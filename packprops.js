@@ -13,7 +13,6 @@
  * lotSizes, householdSizes, and colorSchemes do not have any additions added from packs; there are only the base game options
  */
 
-// TODO: figure out why impot/export isn't working
 export const packProperties = [
   // EXPANSION PACKS
   {
