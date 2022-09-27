@@ -1,12 +1,13 @@
 /* this file includes the properties for every pack
  * 
- * it was last updated: < NULL >
+ * it was last updated: Sept. 26, 2022
  */
 
 /* each new pack should have the following keys:
  * name: ''
  * worlds: ['']
  * lotTraits: ['']
+ * lotChallenges: ['']
  * specialFeatures: ['']
  * archStyles: ['']
  * 
@@ -21,7 +22,7 @@ export const possibleProperties = {
   specialFeatures: ['Home Gym', 'Art Studio', 'Music Room/Studio', 'Bar', 'Study', 'Pool', 'Gazebo', 'Home Office'],
   lotSizes: ['20x15 / 20x20', '30x20 / 30x30', '40x30 / 40x40', '50x40 / 50/50', '64x64'],
   householdSizes: ['1 sim', '2-3 sims', '3-5 sims', '6-8 sims'],
-  archStyles: ['Spanish Colonial', 'Georgian', 'Manufactured', 'Greek Revival', 'Gothic', 'Italiante', 'Colonial Revival', 'Renessaince Revival', 'Queen Anne', 'Mission', 'Tudor', 'Neoclassical', 'Prairie', 'French Eclectic', 'Crafstman', 'Ranch', 'Modern/Contemporary', 'Brutalist/Bauhaus', 'Industrial', 'McMansion', 'Victorian', 'Mediterranean'],
+  archStyles: ['Spanish Colonial', 'Georgian', 'Manufactured', 'Greek Revival', 'Gothic', 'Italiante', 'Colonial Revival', 'Renessaince Revival', 'Queen Anne', 'Mission', 'Tudor', 'Neoclassical', 'Prairie', 'French Eclectic', 'Crafstman', 'Ranch', 'Modern/Contemporary', 'Brutalist/Bauhaus', 'McMansion', 'Victorian', 'Mediterranean'],
   // styles heavily based on 'the Architecture of American Houses' by Pop Chart Labs: https://99percentinvisible.org/article/style-house-visual-guides-domestic-architectural-designs/
   colorSchemes: ['Basics', 'Neutrals', 'Brights', 'Pastels', 'Cool Colors', 'Warm Colors', 'Greyscale'],
   packLimits: ['No Limit', 'Base Game Only', `1 Pack (Builder's Choice)`]
@@ -117,13 +118,21 @@ export const packProperties = [
     specialFeatures: ['Recording Studio', 'Rehearsal Space'],
     archStyles: []
   },
+  {
+    name: 'High School Years',
+    worlds: ['Copperdale'],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Teen Bedroom', 'Teen Hangout'],
+    archStyles: [],
+  },
   // GAME PACKS
   {
     name: 'Outdoor Retreat',
     worlds: ['Granite Falls'],
     lotTraits: [],
     lotChallenges: [],
-    specialFeatures: ['Tree House'],
+    specialFeatures: ['Overgrown Landscaping'],
     archStyles: ['Cabin']
   },
   {
@@ -197,6 +206,22 @@ export const packProperties = [
     lotChallenges: [],
     specialFeatures: ['Renovation of Existing Build', 'Walk-In Closets'],
     archStyles: []
+  },
+  {
+    name: 'My Wedding Stories',
+    worlds: ['Tartosa'],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Tea Room', 'Jack & Jill En Suite'],
+    archStyles: [],
+  },
+  {
+    name: 'Werewolves',
+    worlds: ['Moonwood Mill'],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Observatory/Observation Deck'],
+    archStyles: [],
   },
   // STUFF PACKS
   {
@@ -375,5 +400,93 @@ export const packProperties = [
     lotChallenges: [],
     specialFeatures: ['Courtyard'],
     archStyles: ['Moroccan']
-  }
+  },
+  {
+    name: 'Industrial Loft',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Loft Bedroom'],
+    archStyles: ['Industrial']
+  },
+  {
+    name: 'Fashion Street',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: [],
+    archStyles: ['Indo-Saracenic']
+  },
+  {
+    name: 'Incheon Arrivals',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: [],
+    archStyles: ['Hanok']
+  },
+  {
+    name: 'Blooming Rooms',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: [ 'Greenhouse '],
+    archStyles: []
+  },
+  {
+    name: 'Modern Menswear',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: [],
+    archStyles: []
+  },
+  {
+    name: 'Carnaval Streetwear',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: [],
+    archStyles: []
+  },
+  {
+    name: 'Decor to the Max',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: [],
+    archStyles: ['Maximalism']
+  },
+  {
+    name: 'Moonlight Chic',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: [],
+    archStyles: ['Art Nouveau', 'Art Deco']
+  },
+  {
+    name: 'Little Campers',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: [],
+    archStyles: ['Treehouse', 'Play Area']
+  },
+  {
+    name: 'First Fits',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: [],
+    archStyles: []
+  },
+  {
+    name: 'Desert Luxe',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: [],
+    archStyles: []
+  },
 ];

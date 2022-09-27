@@ -28,7 +28,7 @@ function pageLoading(packData) {
 
 function packSelection () {
   const checkboxes = document.querySelectorAll(`input[type=checkbox]:checked`);
-  return checkboxes.map((checks) => checks.id);
+  return Array.from(checkboxes).map((checks) => checks.id);
 }
 
 function wheelSpin () {

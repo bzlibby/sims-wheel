@@ -11,6 +11,7 @@
   },
   "type": "module",
   "scripts": {
-    "test": "mocha"
+    "serve": "node dev-server.cjs",
+    "test": "c8 mocha"
   }
 }
