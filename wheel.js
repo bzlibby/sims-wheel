@@ -26,17 +26,15 @@ function pageLoading(packData) {
   };
 };
 
+function packSelection () {
+  const checkboxes = document.querySelectorAll(`input[type=checkbox]:checked`);
+  return checkboxes.map((checks) => checks.id);
+}
+
 function wheelSpin () {
-  const selectedPackNames = [];
-  const packSelection = function() {
-    const checkboxes = document.querySelectorAll(`input[type=checkbox]:checked`);
-    checkboxes.forEach((checkbox) => {
-        selectedPackNames.push(checkbox.id);
-    });
-    return selectedPackNames;
-  };
+  const selectedPackNames = packSelection();
   console.log('The wheel has been spun!');
-  console.log('These packs have been checked: ' + packSelection());
+  console.log('These packs have been checked: ' +selectedPackNames);
   const selectedPackProperties = [];
   for (let i = 0; i < selectedPackNames.length; i++) {
     selectedPackProperties.push(...packProperties.filter(x => x.name === selectedPackNames[i]));
@@ -77,4 +75,4 @@ function wheelSpin () {
 
 
 
-export { pageLoading, wheelSpin };
+export { pageLoading, wheelSpin, packSelection };
