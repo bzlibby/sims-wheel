@@ -10,19 +10,70 @@ if (typeof document !== 'undefined') {
 
 function pageLoading(packData) {
   const allPacks = [];
+  const expansionPacks = [];
+  const gamePacks = [];
+  const stuffPacks = [];
+  const kits = [];
   for (let i = 0; i < packData.length; i ++) {
     allPacks.push(packData[i].name);
+    switch (packData[i].type) {
+      case 'Expansion':
+        expansionPacks.push(packData[i].name)
+        break
+      case 'Game':
+        gamePacks.push(packData[i].name)
+        break
+      case 'Stuff':
+        stuffPacks.push(packData[i].name)
+        break
+      case 'Kit':
+        kits.push(packData[i].name)
+        break
+    }
   };
-  const packDiv = document.getElementById('pack-list');
-  for (let j = 0; j < allPacks.length; j ++) {
+  const expansionDiv = document.getElementById('expansion-pack-list');
+  for (let j = 0; j < expansionPacks.length; j ++) {
     const checkbox = document.createElement('input');
     const label = document.createElement('label');
     checkbox.type = 'checkbox';
-    checkbox.id = allPacks[j];
-    packDiv.appendChild(checkbox);
-    packDiv.appendChild(label);
-    label.appendChild(document.createTextNode(allPacks[j]));
-    label.htmlFor = allPacks[j];
+    checkbox.id = expansionPacks[j];
+    expansionDiv.appendChild(checkbox);
+    expansionDiv.appendChild(label);
+    label.appendChild(document.createTextNode(expansionPacks[j]));
+    label.htmlFor = expansionPacks[j];
+  };
+  const gameDiv = document.getElementById('game-pack-list');
+  for (let j = 0; j < gamePacks.length; j ++) {
+    const checkbox = document.createElement('input');
+    const label = document.createElement('label');
+    checkbox.type = 'checkbox';
+    checkbox.id = gamePacks[j];
+    gameDiv.appendChild(checkbox);
+    gameDiv.appendChild(label);
+    label.appendChild(document.createTextNode(gamePacks[j]));
+    label.htmlFor = gamePacks[j];
+  };
+  const stuffDiv = document.getElementById('stuff-pack-list');
+  for (let j = 0; j < stuffPacks.length; j ++) {
+    const checkbox = document.createElement('input');
+    const label = document.createElement('label');
+    checkbox.type = 'checkbox';
+    checkbox.id = stuffPacks[j];
+    stuffDiv.appendChild(checkbox);
+    stuffDiv.appendChild(label);
+    label.appendChild(document.createTextNode(stuffPacks[j]));
+    label.htmlFor = stuffPacks[j];
+  };
+  const kitsDiv = document.getElementById('kit-list');
+  for (let j = 0; j < kits.length; j ++) {
+    const checkbox = document.createElement('input');
+    const label = document.createElement('label');
+    checkbox.type = 'checkbox';
+    checkbox.id = kits[j];
+    kitsDiv.appendChild(checkbox);
+    kitsDiv.appendChild(label);
+    label.appendChild(document.createTextNode(kits[j]));
+    label.htmlFor = kits[j];
   };
 };
 
@@ -34,7 +85,7 @@ function packSelection () {
 function wheelSpin () {
   const selectedPackNames = packSelection();
   console.log('The wheel has been spun!');
-  console.log('These packs have been checked: ' +selectedPackNames);
+  console.log('These packs have been checked: ' + selectedPackNames);
   const selectedPackProperties = [];
   for (let i = 0; i < selectedPackNames.length; i++) {
     selectedPackProperties.push(...packProperties.filter(x => x.name === selectedPackNames[i]));

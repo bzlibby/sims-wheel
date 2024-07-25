@@ -81,14 +81,14 @@ h3 {
 	text-shadow: var(--white-ish) 1px 1px 1px
 }
 
-#pack-selection h4 {
+h4 {
 	font-family: var(--headerfont);
-	font-size: 16px;
-	margin-bottom: 0px;
+	font-size: 24px;
+	margin-bottom: 10px;
 }
 
 /* TODO: style the checkboxes to look better/be in an actual list */
-#pack-list {
+.pack-list {
 	margin-top: -5px;
 	display: inline-grid;
 	grid-template-columns: repeat(5, 20px [col-start] 150px [col-start]);

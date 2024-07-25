@@ -32,6 +32,7 @@ export const packProperties = [
   // EXPANSION PACKS
   {
     name: 'Get to Work',
+    type: 'Expansion',
     worlds: ['Magnolia Promenade'],
     lotTraits: [],
     lotChallenges: [],
@@ -40,6 +41,7 @@ export const packProperties = [
   },
   { 
     name: 'Get Together',
+    type: 'Expansion',
     worlds: ['Windenburg'],
     lotTraits: [],
     lotChallenges: [],
@@ -48,6 +50,7 @@ export const packProperties = [
   },
   {
     name: 'City Living',
+    type: 'Expansion',
     worlds: [],
     lotTraits: [`Chef's Kitchen`, 'Good Schools', 'Mean Vibe', 'Home Studio', 'Sunny Aspect', 'Penny Pixies', 'Party Place', 'Romantic Aura', 'Great Soil', `Child's Play`, 'On Ley Line', 'Gnomes'],
     lotChallenges: ['Spooky', 'Filty', 'Gremlins', 'Grody', 'Cursed', 'Quake Zone'],
@@ -56,6 +59,7 @@ export const packProperties = [
   },
   {
     name: 'Cats and Dogs',
+    type: 'Expansion',
     worlds: ['Brindleton Bay'],
     lotTraits: ['Breeding Grounds', 'Cat Hangout', 'Dog Hangout', 'Training Grounds'],
     lotChallenges: [],
@@ -64,6 +68,7 @@ export const packProperties = [
   },
   {
     name: 'Seasons',
+    type: 'Expansion',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -72,6 +77,7 @@ export const packProperties = [
   },
   {
     name: 'Island Living',
+    type: 'Expansion',
     worlds: ['Sulani'],
     lotTraits: ['Island Spirits'],
     lotChallenges: ['Volcanic Activity'],
@@ -80,6 +86,7 @@ export const packProperties = [
   },
   {
     name: 'Discover University',
+    type: 'Expansion',
     worlds: ['Britechester'],
     lotTraits: ['Study Spot'],
     lotChallenges: [],
@@ -96,6 +103,7 @@ export const packProperties = [
   },
   {
     name: 'Snowy Escape',
+    type: 'Expansion',
     worlds: ['Mt. Komorebi'],
     lotTraits: [],
     lotChallenges: [],
@@ -104,6 +112,7 @@ export const packProperties = [
   },
   {
     name: 'Cottage Living',
+    type: 'Expansion',
     worlds: ['Henford-on-Bagley'],
     lotTraits: [],
     lotChallenges: ['Simple Living', 'Wild Foxes'],
@@ -112,6 +121,7 @@ export const packProperties = [
   },
   {
     name: 'Get Famous',
+    type: 'Expansion',
     worlds: ['Del Sol Valley'],
     lotTraits: ['Celebrity Home'],
     lotChallenges: [],
@@ -120,6 +130,7 @@ export const packProperties = [
   },
   {
     name: 'High School Years',
+    type: 'Expansion',
     worlds: ['Copperdale'],
     lotTraits: [],
     lotChallenges: [],
@@ -128,6 +139,7 @@ export const packProperties = [
   },
   {
     name: 'Growing Together',
+    type: 'Expansion',
     worlds: ['San Sequoia'],
     lotTraits: [],
     lotChallenges: ['Wild Prairie Grass'],
@@ -136,6 +148,7 @@ export const packProperties = [
   },
   {
     name: 'Horse Ranch',
+    type: 'Expansion',
     worlds: ['Chestnut Ridge'],
     lotTraits: [],
     lotChallenges: [],
@@ -144,6 +157,7 @@ export const packProperties = [
   },
   {
     name: 'For Rent',
+    type: 'Expansion',
     worlds: 'Tomarang',
     lotTraits: [],
     lotChallenges: ['Mold', 'Maintenence Troubles'],
@@ -152,6 +166,7 @@ export const packProperties = [
   },
   {
     name: 'Lovestruck',
+    type: 'Expansion',
     worlds: ['Ciudad Enamorada'],
     lotTraits: ['Singles Hangout'],
     // TODO: check if this trait can be used on residential lots
@@ -162,6 +177,7 @@ export const packProperties = [
   // GAME PACKS
   {
     name: 'Outdoor Retreat',
+    type: 'Game',
     worlds: ['Granite Falls'],
     lotTraits: [],
     lotChallenges: [],
@@ -170,6 +186,7 @@ export const packProperties = [
   },
   {
     name: 'Spa Day',
+    type: 'Game',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -179,6 +196,7 @@ export const packProperties = [
   {
     name: 'Dine Out',
     worlds: [],
+    type: 'Game',
     lotTraits: [],
     lotChallenges: [],
     specialFeatures: [],
@@ -186,6 +204,7 @@ export const packProperties = [
   },
   {
     name: 'Vampires',
+    type: 'Game',
     worlds: ['Forgotton Hollow'],
     lotTraits: ['On a Dark Ley Line', 'Registered Vampire Lair', 'Vampire Nexus'],
     lotChallenges: [],
@@ -194,6 +213,7 @@ export const packProperties = [
   },
   {
     name: 'Parenthood',
+    type: 'Game',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -202,6 +222,7 @@ export const packProperties = [
   },
   {
     name: 'Jungle Adventure',
+    type: 'Game',
     worlds: ['Selvadorada'],
     lotTraits: ['Peace and Quiet'],
     lotChallenges: ['Creepy Crawlies'],
@@ -210,6 +231,7 @@ export const packProperties = [
   },
   {
     name: 'Strangerville',
+    type: 'Game',
     worlds: ['Strangerville'],
     lotTraits: [],
     lotChallenges: [],
@@ -218,6 +240,7 @@ export const packProperties = [
   },
   {
     name: 'Realm of Magic',
+    type: 'Game',
     worlds: ['Glimmerbrook'],
     lotTraits: [],
     lotChallenges: [],
@@ -226,6 +249,7 @@ export const packProperties = [
   },
   {
     name: 'Journey to Batuu',
+    type: 'Game',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -234,6 +258,7 @@ export const packProperties = [
   },
   {
     name: 'Dream Home Decorator',
+    type: 'Game',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -242,6 +267,7 @@ export const packProperties = [
   },
   {
     name: 'My Wedding Stories',
+    type: 'Game',
     worlds: ['Tartosa'],
     lotTraits: [],
     lotChallenges: [],
@@ -250,6 +276,7 @@ export const packProperties = [
   },
   {
     name: 'Werewolves',
+    type: 'Game',
     worlds: ['Moonwood Mill'],
     lotTraits: [],
     lotChallenges: [],
@@ -259,6 +286,7 @@ export const packProperties = [
   // STUFF PACKS
   {
     name: 'Luxury Party',
+    type: 'Stuff',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -267,6 +295,7 @@ export const packProperties = [
   },
   {
     name: 'Perfect Patio',
+    type: 'Stuff',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -275,6 +304,7 @@ export const packProperties = [
   },
   {
     name: 'Cool Kitchen',
+    type: 'Stuff',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -283,6 +313,7 @@ export const packProperties = [
   },
   {
     name: 'Spooky Stuff',
+    type: 'Stuff',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -291,6 +322,7 @@ export const packProperties = [
   },
   {
     name: 'Movie Hangout',
+    type: 'Stuff',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -299,6 +331,7 @@ export const packProperties = [
   },
   {
     name: 'Romantic Garden',
+    type: 'Stuff',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -307,6 +340,7 @@ export const packProperties = [
   },
   {
     name: 'Kids Room',
+    type: 'Stuff',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -315,6 +349,7 @@ export const packProperties = [
   },
   {
     name: 'Backyard Stuff',
+    type: 'Stuff',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -323,6 +358,7 @@ export const packProperties = [
   },
   {
     name: 'Vintage Glamour',
+    type: 'Stuff',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -331,6 +367,7 @@ export const packProperties = [
   },
   {
     name: 'Bowling Night',
+    type: 'Stuff',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -339,6 +376,7 @@ export const packProperties = [
   },
   {
     name: 'Fitness Stuff',
+    type: 'Stuff',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -347,6 +385,7 @@ export const packProperties = [
   },
   {
     name: 'Toddler Stuff',
+    type: 'Stuff',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -355,6 +394,7 @@ export const packProperties = [
   },
   {
     name: 'Laundry Day',
+    type: 'Stuff',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -363,6 +403,7 @@ export const packProperties = [
   },
   {
     name: 'My First Pet',
+    type: 'Stuff',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -371,6 +412,7 @@ export const packProperties = [
   },
   {
     name: 'Moschino',
+    type: 'Stuff',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -379,6 +421,7 @@ export const packProperties = [
   },
   {
     name: 'Tiny Living',
+    type: 'Stuff',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -387,6 +430,7 @@ export const packProperties = [
   },
   {
     name: 'Nifty Knitting',
+    type: 'Stuff',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -395,6 +439,7 @@ export const packProperties = [
   },
   {
     name: 'Paranormal Stuff',
+    type: 'Stuff',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -403,6 +448,7 @@ export const packProperties = [
   },
   {
     name: 'Home Chef Hustle',
+    type: 'Stuff',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -411,6 +457,7 @@ export const packProperties = [
   },
   {
     name: 'Crystal Creations',
+    type: 'Stuff',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -420,6 +467,7 @@ export const packProperties = [
   // KITS
   {
     name: 'Bust the Dust',
+    type: 'Kit',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -428,6 +476,7 @@ export const packProperties = [
   },
   {
     name: 'Country Kitchen',
+    type: 'Kit',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -436,6 +485,7 @@ export const packProperties = [
   },
   {
     name: 'Throwback Fit',
+    type: 'Kit',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -444,6 +494,7 @@ export const packProperties = [
   },
   {
     name: 'Courtyard Oasis',
+    type: 'Kit',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -452,6 +503,7 @@ export const packProperties = [
   },
   {
     name: 'Industrial Loft',
+    type: 'Kit',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -460,6 +512,7 @@ export const packProperties = [
   },
   {
     name: 'Fashion Street',
+    type: 'Kit',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -468,6 +521,7 @@ export const packProperties = [
   },
   {
     name: 'Incheon Arrivals',
+    type: 'Kit',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -476,22 +530,25 @@ export const packProperties = [
   },
   {
     name: 'Blooming Rooms',
+    type: 'Kit',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
-    specialFeatures: [ 'Greenhouse '],
+    specialFeatures: ['Greenhouse'],
     archStyles: []
   },
   {
     name: 'Modern Menswear',
+    type: 'Kit',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
-    specialFeatures: [],
+    specialFeatures: ['Bachelor Pad', 'Man Cave'],
     archStyles: []
   },
   {
     name: 'Carnaval Streetwear',
+    type: 'Kit',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -500,6 +557,7 @@ export const packProperties = [
   },
   {
     name: 'Decor to the Max',
+    type: 'Kit',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -508,6 +566,7 @@ export const packProperties = [
   },
   {
     name: 'Moonlight Chic',
+    type: 'Kit',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -516,6 +575,7 @@ export const packProperties = [
   },
   {
     name: 'Little Campers',
+    type: 'Kit',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -524,6 +584,7 @@ export const packProperties = [
   },
   {
     name: 'First Fits',
+    type: 'Kit',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -532,6 +593,7 @@ export const packProperties = [
   },
   {
     name: 'Desert Luxe',
+    type: 'Kit',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -540,6 +602,7 @@ export const packProperties = [
   },
   {
     name: 'Everyday Clutter',
+    type: 'Kit',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -548,6 +611,7 @@ export const packProperties = [
   },
   {
     name: 'Pastel Pop',
+    type: 'Kit',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -556,6 +620,7 @@ export const packProperties = [
   },
   {
     name: 'Bathroom Clutter',
+    type: 'Kit',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -564,6 +629,7 @@ export const packProperties = [
   },
   {
     name: 'Simtimates Collection',
+    type: 'Kit',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -572,6 +638,7 @@ export const packProperties = [
   },
   {
     name: 'Basement Treasures',
+    type: 'Kit',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -580,6 +647,7 @@ export const packProperties = [
   },
   {
     name: 'Greenhouse Haven',
+    type: 'Kit',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -588,6 +656,7 @@ export const packProperties = [
   },
   {
     name: 'Grunge Revival',
+    type: 'Kit',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -596,6 +665,7 @@ export const packProperties = [
   },
   {
     name: 'Book Nook',
+    type: 'Kit',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -604,6 +674,7 @@ export const packProperties = [
   },
   {
     name: 'Modern Luxe',
+    type: 'Kit',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -612,6 +683,7 @@ export const packProperties = [
   },
   {
     name: 'Poolside Splash',
+    type: 'Kit',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -620,6 +692,7 @@ export const packProperties = [
   },
   {
     name: 'Castle Estates',
+    type: 'Kit',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -628,14 +701,16 @@ export const packProperties = [
   },
   {
     name: 'Goth Galore',
+    type: 'Kit',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
     specialFeatures: ['Brooding Room'],
-    archStyles: []
+    archStyles: ['Victorian']
   },
   {
     name: 'Urban Homage',
+    type: 'Kit',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -644,6 +719,7 @@ export const packProperties = [
   },
   {
     name: 'Party Essentials',
+    type: 'Kit',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -652,6 +728,7 @@ export const packProperties = [
   },
   {
     name: 'Riviera Retreat',
+    type: 'Kit',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
@@ -660,6 +737,7 @@ export const packProperties = [
   },
   {
     name: 'Cozy Bistro',
+    type: 'Kit',
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
