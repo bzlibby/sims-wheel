@@ -56,6 +56,7 @@ function wheelSpin () {
   };
   console.log('These are the possible properties for your build: ');
   console.log(possibleProperties);
+  console.log('These are the selected properties for your build - Good luck!')
   const challengeProperties = {
     world: possibleProperties.worlds[Math.floor(Math.random() * possibleProperties.worlds.length)],
     budget: possibleProperties.budgets[Math.floor(Math.random() * possibleProperties.budgets.length)],

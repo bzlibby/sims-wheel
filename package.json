@@ -12,6 +12,10 @@
   "type": "module",
   "scripts": {
     "serve": "node dev-server.cjs",
-    "test": "c8 mocha"
+    "test": "c8 mocha",
+    "dev": "lite-server"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
   }
 }

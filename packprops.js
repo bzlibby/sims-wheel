@@ -1,6 +1,6 @@
 /* this file includes the properties for every pack
  * 
- * it was last updated: Sept. 26, 2022
+ * it was last updated: July 25, 2024 [Lovestruck]
  */
 
 /* each new pack should have the following keys:
@@ -124,6 +124,39 @@ export const packProperties = [
     lotTraits: [],
     lotChallenges: [],
     specialFeatures: ['Teen Bedroom', 'Teen Hangout'],
+    archStyles: [],
+  },
+  {
+    name: 'Growing Together',
+    worlds: ['San Sequoia'],
+    lotTraits: [],
+    lotChallenges: ['Wild Prairie Grass'],
+    specialFeatures: ['Nursery', 'Mother-in-Law Suite', 'Multigenerational Home'],
+    archStyles: ['Ranch'],
+  },
+  {
+    name: 'Horse Ranch',
+    worlds: ['Chestnut Ridge'],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Horse Ranch'],
+    archStyles: [],
+  },
+  {
+    name: 'For Rent',
+    worlds: 'Tomarang',
+    lotTraits: [],
+    lotChallenges: ['Mold', 'Maintenence Troubles'],
+    specialFeatures: ['Multi-family Home', 'Communal Spaces', 'Courtyard', 'Maintenence Room'],
+    archStyles: [],
+  },
+  {
+    name: 'Lovestruck',
+    worlds: ['Ciudad Enamorada'],
+    lotTraits: ['Singles Hangout'],
+    // TODO: check if this trait can be used on residential lots
+    lotChallenges: [],
+    specialFeatures: ['Bachelor/ette Pad', 'Hot Tub'],
     archStyles: [],
   },
   // GAME PACKS
@@ -366,7 +399,23 @@ export const packProperties = [
     lotTraits: [],
     lotChallenges: [],
     specialFeatures: ['Haunted House (lot type)', 'Attic'],
-    archStyles: []
+    archStyles: [],
+  },
+  {
+    name: 'Home Chef Hustle',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Modern Kitchen', 'Pizza Kitchen', 'Baking Kitchen'],
+    archStyles: [],
+  },
+  {
+    name: 'Crystal Creations',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Jewelry Workshop'],
+    archStyles: [],
   },
   // KITS
   {
@@ -489,4 +538,132 @@ export const packProperties = [
     specialFeatures: [],
     archStyles: []
   },
+  {
+    name: 'Everyday Clutter',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['No Storage Space'],
+    archStyles: []
+  },
+  {
+    name: 'Pastel Pop',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: [],
+    archStyles: []
+  },
+  {
+    name: 'Bathroom Clutter',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['En Suite Bathroom'],
+    archStyles: []
+  },
+  {
+    name: 'Simtimates Collection',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: [],
+    archStyles: []
+  },
+  {
+    name: 'Basement Treasures',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Unfinished Basement', 'Finished Basement', 'Attic'],
+    archStyles: []
+  },
+  {
+    name: 'Greenhouse Haven',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Greenhouse', 'Garden'],
+    archStyles: []
+  },
+  {
+    name: 'Grunge Revival',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Music Space'],
+    archStyles: []
+  },
+  {
+    name: 'Book Nook',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Book Nook', 'Library'],
+    archStyles: []
+  },
+  {
+    name: 'Modern Luxe',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: [],
+    archStyles: ['Modern']
+  },
+  {
+    name: 'Poolside Splash',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Above Ground Pool', 'In Ground Pool'],
+    archStyles: []
+  },
+  {
+    name: 'Castle Estates',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Throne Room', 'Moat'],
+    archStyles: ['Castle']
+  },
+  {
+    name: 'Goth Galore',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Brooding Room'],
+    archStyles: []
+  },
+  {
+    name: 'Urban Homage',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Exposed Brick', 'Mural'],
+    archStyles: []
+  },
+  {
+    name: 'Party Essentials',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Party Room'],
+    archStyles: []
+  },
+  {
+    name: 'Riviera Retreat',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['River/waterfront'],
+    archStyles: []
+  },
+  {
+    name: 'Cozy Bistro',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Breakfast/Coffee Nook', 'Dining Patio'],
+    archStyles: []
+  }
 ];
