@@ -8,6 +8,19 @@ if (typeof document !== 'undefined') {
   document.getElementById('spinner-button').onclick = wheelSpin
 };
 
+function makeCheckboxes(divID, list) {
+  for (let i = 0; i < list.length; i ++) {
+    const checkbox = document.createElement('input');
+    const label = document.createElement('label');
+    checkbox.type = 'checkbox';
+    checkbox.id = list[i];
+    divID.appendChild(checkbox);
+    divID.appendChild(label);
+    label.appendChild(document.createTextNode(list[i]));
+    label.htmlFor = list[i];
+  };
+}
+
 function pageLoading(packData) {
   const allPacks = [];
   const expansionPacks = [];
@@ -32,54 +45,43 @@ function pageLoading(packData) {
     }
   };
   const expansionDiv = document.getElementById('expansion-pack-list');
-  for (let j = 0; j < expansionPacks.length; j ++) {
-    const checkbox = document.createElement('input');
-    const label = document.createElement('label');
-    checkbox.type = 'checkbox';
-    checkbox.id = expansionPacks[j];
-    expansionDiv.appendChild(checkbox);
-    expansionDiv.appendChild(label);
-    label.appendChild(document.createTextNode(expansionPacks[j]));
-    label.htmlFor = expansionPacks[j];
-  };
+  makeCheckboxes(expansionDiv, expansionPacks);
   const gameDiv = document.getElementById('game-pack-list');
-  for (let j = 0; j < gamePacks.length; j ++) {
-    const checkbox = document.createElement('input');
-    const label = document.createElement('label');
-    checkbox.type = 'checkbox';
-    checkbox.id = gamePacks[j];
-    gameDiv.appendChild(checkbox);
-    gameDiv.appendChild(label);
-    label.appendChild(document.createTextNode(gamePacks[j]));
-    label.htmlFor = gamePacks[j];
-  };
+  makeCheckboxes(gameDiv, gamePacks);
   const stuffDiv = document.getElementById('stuff-pack-list');
-  for (let j = 0; j < stuffPacks.length; j ++) {
-    const checkbox = document.createElement('input');
-    const label = document.createElement('label');
-    checkbox.type = 'checkbox';
-    checkbox.id = stuffPacks[j];
-    stuffDiv.appendChild(checkbox);
-    stuffDiv.appendChild(label);
-    label.appendChild(document.createTextNode(stuffPacks[j]));
-    label.htmlFor = stuffPacks[j];
-  };
+  makeCheckboxes(stuffDiv, stuffPacks);
   const kitsDiv = document.getElementById('kit-list');
-  for (let j = 0; j < kits.length; j ++) {
-    const checkbox = document.createElement('input');
-    const label = document.createElement('label');
-    checkbox.type = 'checkbox';
-    checkbox.id = kits[j];
-    kitsDiv.appendChild(checkbox);
-    kitsDiv.appendChild(label);
-    label.appendChild(document.createTextNode(kits[j]));
-    label.htmlFor = kits[j];
-  };
+  makeCheckboxes(kitsDiv, kits);
 };
 
 function packSelection () {
   const checkboxes = document.querySelectorAll(`input[type=checkbox]:checked`);
   return Array.from(checkboxes).map((checks) => checks.id);
+}
+
+function getRandomItem (list) {
+  let randomItem = list[Math.floor(Math.random() * list.length)]
+  return randomItem
+}
+
+
+function makeResultDisplay (type, result) {
+  const resultsDiv = document.getElementById(type);
+  resultsDiv.replaceChildren(document.createTextNode(result));
+}
+
+function displayResults (results) {
+  makeResultDisplay('world', results.world);
+  makeResultDisplay('budget', results.budget);
+  makeResultDisplay('lot-traits', results.lotTraits);
+  makeResultDisplay('lot-challenge', results.lotChallenge);
+  makeResultDisplay('special-feature', results.specialFeature);
+  makeResultDisplay('lot-size', results.lotSize);
+  makeResultDisplay('household-size', results.householdSize);
+  makeResultDisplay('arch-style', results.archStyle);
+  makeResultDisplay('color-scheme', results.colorScheme);
+  makeResultDisplay('pack-limits', results.packLimit);
+  makeResultDisplay('cc-limit', results.ccLimit);
 }
 
 function wheelSpin () {
@@ -107,24 +109,23 @@ function wheelSpin () {
   };
   console.log('These are the possible properties for your build: ');
   console.log(possibleProperties);
-  console.log('These are the selected properties for your build - Good luck!')
+  console.log('These are the selected properties for your build - Good luck!');
   const challengeProperties = {
-    world: possibleProperties.worlds[Math.floor(Math.random() * possibleProperties.worlds.length)],
-    budget: possibleProperties.budgets[Math.floor(Math.random() * possibleProperties.budgets.length)],
+    world: getRandomItem(possibleProperties.worlds),
+    budget: getRandomItem(possibleProperties.budgets),
     lotTraits: possibleProperties.lotTraits.sort(() => 0.5 - Math.random()).slice(0,3),
-    lotChallenge: possibleProperties.lotChallenges[Math.floor(Math.random() * possibleProperties.lotChallenges.length)],
-    specialFeature: possibleProperties.specialFeatures[Math.floor(Math.random() * possibleProperties.specialFeatures.length)],
-    lotSize: possibleProperties.lotSizes[Math.floor(Math.random() * possibleProperties.lotSizes.length)],
-    householdSize: possibleProperties.householdSizes[Math.floor(Math.random() * possibleProperties.householdSizes.length)],
-    archStyle: possibleProperties.archStyles[Math.floor(Math.random() * possibleProperties.archStyles.length)],
-    colorScheme: possibleProperties.colorSchemes[Math.floor(Math.random() * possibleProperties.colorSchemes.length)],
-    packLimit: possibleProperties.packLimits[Math.floor(Math.random() * possibleProperties.packLimits.length)],
+    lotChallenge: getRandomItem(possibleProperties.lotChallenges),
+    specialFeature: getRandomItem(possibleProperties.specialFeatures),
+    lotSize: getRandomItem(possibleProperties.lotSizes),
+    householdSize: getRandomItem(possibleProperties.householdSizes),
+    archStyle: getRandomItem(possibleProperties.archStyles),
+    colorScheme: getRandomItem(possibleProperties.colorSchemes),
+    packLimit: getRandomItem(possibleProperties.packLimits),
     ccLimit: Math.random() < 0.5
   };
   console.log(challengeProperties);
-  return challengeProperties;
+  displayResults(challengeProperties);
 };
-
 
 
 export { pageLoading, wheelSpin, packSelection };
