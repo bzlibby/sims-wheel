@@ -100,7 +100,7 @@ h4 {
 	text-align: center;
 }
 /* button base style from https://css-tricks.com/overriding-default-button-styles/ */
-button {
+#spinner-button {
   display: inline-block;
 	border: none;
 	border-radius: 100px;
@@ -117,12 +117,12 @@ button {
   -moz-appearance: none;
 }
 
-button:hover {
+#spinner-button:hover {
 		background: var(--m-green);
     font-style: bold;
 }
 
-button:active {
+#spinner-button:active {
 	background-color: var(--white-ish);
 	transform: rotate(-540deg)
 }

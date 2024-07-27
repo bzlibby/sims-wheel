@@ -5,6 +5,7 @@
 
 /* each new pack should have the following keys:
  * name: ''
+ * type: '' (Expansion, Game, Stuff, or Kit)
  * worlds: ['']
  * lotTraits: ['']
  * lotChallenges: ['']
@@ -51,7 +52,7 @@ export const packProperties = [
   {
     name: 'City Living',
     type: 'Expansion',
-    worlds: [],
+    worlds: ['San Myshuno'],
     lotTraits: [`Chef's Kitchen`, 'Good Schools', 'Mean Vibe', 'Home Studio', 'Sunny Aspect', 'Penny Pixies', 'Party Place', 'Romantic Aura', 'Great Soil', `Child's Play`, 'On Ley Line', 'Gnomes'],
     lotChallenges: ['Spooky', 'Filty', 'Gremlins', 'Grody', 'Cursed', 'Quake Zone'],
     specialFeatures: ['Karaoke Space'],
@@ -158,7 +159,7 @@ export const packProperties = [
   {
     name: 'For Rent',
     type: 'Expansion',
-    worlds: 'Tomarang',
+    worlds: ['Tomarang'],
     lotTraits: [],
     lotChallenges: ['Mold', 'Maintenence Troubles'],
     specialFeatures: ['Multi-family Home', 'Communal Spaces', 'Courtyard', 'Maintenence Room'],

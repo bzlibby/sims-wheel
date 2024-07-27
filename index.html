@@ -19,16 +19,28 @@
 		<h3>Choose Your Packs</h3>
 		<!-- packs checklist auto-generated using wheel.js -->
 			<h4>Expansion Packs</h4>
-			<div class='pack-list' id='expansion-pack-list'></div>
+			<div class='pack-list' id='expansion-pack-list'>
+				<input type="checkbox" id="select-all-expansions">
+				<label for="select-all-expansions">Select All</label>
+			</div>
 
 			<h4>Game Packs</h4>
-			<div class='pack-list' id='game-pack-list'></div>
+			<div class='pack-list' id='game-pack-list'>
+				<input type="checkbox" id="select-all-gamepacks">
+				<label for="select-all-gamepacks">Select All</label>
+			</div>
 			
 			<h4>Stuff Packs</h4>
-			<div class='pack-list' id='stuff-pack-list'></div>
+			<div class='pack-list' id='stuff-pack-list'>
+				<input type="checkbox" id="select-all-stuffpacks">
+				<label for="select-all-stuffpacks">Select All</label>
+			</div>
 
 			<h4>Kits</h4>
-			<div class='pack-list' id='kit-list'></div>
+			<div class='pack-list' id='kit-list'>
+				<input type="checkbox" id="select-all-kits">
+				<label for="select-all-kits">Select All</label>
+			</div>
 	</section>
 	<section id='spinner'>
 		<button id='spinner-button'>spin</button>
@@ -41,47 +53,47 @@
 				<tbody>
 					<tr>
 						<th scope="row">World</th>
-						<td id="world"></td>
+						<td class="property" id="world"></td>
 					</tr>
 					<tr>
 						<th scope="row">Lot Size</th>
-						<td id="lot-size"></td>
+						<td class="property" id="lot-size"></td>
 					</tr>
 					<tr>
 						<th scope="row">Budget</th>
-						<td id="budget"></td>
+						<td class="property" id="budget"></td>
 					</tr>
 					<tr>
 						<th scope="row">Household Size</th>
-						<td id="household-size"></td>
+						<td class="property" id="household-size"></td>
 					</tr>
 					<tr>
 						<th scope="row">Lot Traits</th>
-						<td id="lot-traits"></td>
+						<td class="property" id="lot-traits"></td>
 					</tr>
 					<tr>
 						<th scope="row">Lot Challenge</th>
-						<td id="lot-challenge"></td>
+						<td class="property" id="lot-challenge"></td>
 					</tr>
 					<tr>
 						<th scope="row">Architectural Style</th>
-						<td id="arch-style"></td>
+						<td class="property" id="arch-style"></td>
 					</tr>
 					<tr>
 						<th scope="row">Color Scheme</th>
-						<td id="color-scheme"></td>
+						<td class="property" id="color-scheme"></td>
 					</tr>
 					<tr>
 						<th scope="row">Special Feature</th>
-						<td id="special-feature"></td>
+						<td class="property" id="special-feature"></td>
 					</tr>
 					<tr>
 						<th scope="row">Pack Limits</th>
-						<td id="pack-limits"></td>
+						<td class="property" id="pack-limits"></td>
 					</tr>
 					<tr>
 						<th scope="row">CC Allowed</th>
-						<td id="cc-limit"></td>
+						<td class="property" id="cc-limit"></td>
 					</tr>
 				</tbody>
 			</table>

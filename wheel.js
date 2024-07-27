@@ -5,14 +5,43 @@
 import { packProperties, possibleProperties } from './packprops.js';
 if (typeof document !== 'undefined') {
   document.onload = pageLoading(packProperties);
-  document.getElementById('spinner-button').onclick = wheelSpin
+  document.getElementById('spinner-button').onclick = wheelSpin;
+  // select all expansion packs
+  document.getElementById('select-all-expansions').addEventListener("change", function() {
+    let checkboxes = document.querySelectorAll('.expansion');
+    for (let i = 0; i < checkboxes.length; i ++) {
+      checkboxes[i].checked = this.checked
+    };
+  }, this);
+  // select all game packs
+  document.getElementById('select-all-gamepacks').addEventListener("change", function() {
+    let checkboxes = document.querySelectorAll('.game');
+    for (let i = 0; i < checkboxes.length; i ++) {
+      checkboxes[i].checked = this.checked
+    };
+  }, this);
+  // select all stuff packs
+  document.getElementById('select-all-stuffpacks').addEventListener("change", function() {
+    let checkboxes = document.querySelectorAll('.stuff');
+    for (let i = 0; i < checkboxes.length; i ++) {
+      checkboxes[i].checked = this.checked
+    };
+  }, this);
+  // select all kits
+  document.getElementById('select-all-kits').addEventListener("change", function() {
+    let checkboxes = document.querySelectorAll('.kit');
+    for (let i = 0; i < checkboxes.length; i ++) {
+      checkboxes[i].checked = this.checked
+    };
+  }, this);
 };
 
-function makeCheckboxes(divID, list) {
+function makeCheckboxes(divID, type, list) {
   for (let i = 0; i < list.length; i ++) {
     const checkbox = document.createElement('input');
     const label = document.createElement('label');
     checkbox.type = 'checkbox';
+    checkbox.className = type;
     checkbox.id = list[i];
     divID.appendChild(checkbox);
     divID.appendChild(label);
@@ -45,13 +74,13 @@ function pageLoading(packData) {
     }
   };
   const expansionDiv = document.getElementById('expansion-pack-list');
-  makeCheckboxes(expansionDiv, expansionPacks);
+  makeCheckboxes(expansionDiv, 'expansion', expansionPacks);
   const gameDiv = document.getElementById('game-pack-list');
-  makeCheckboxes(gameDiv, gamePacks);
+  makeCheckboxes(gameDiv, 'game', gamePacks);
   const stuffDiv = document.getElementById('stuff-pack-list');
-  makeCheckboxes(stuffDiv, stuffPacks);
+  makeCheckboxes(stuffDiv, 'stuff', stuffPacks);
   const kitsDiv = document.getElementById('kit-list');
-  makeCheckboxes(kitsDiv, kits);
+  makeCheckboxes(kitsDiv, 'kit', kits);
 };
 
 function packSelection () {
@@ -63,7 +92,6 @@ function getRandomItem (list) {
   let randomItem = list[Math.floor(Math.random() * list.length)]
   return randomItem
 }
-
 
 function makeResultDisplay (type, result) {
   const resultsDiv = document.getElementById(type);
