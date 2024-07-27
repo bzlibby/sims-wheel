@@ -49,7 +49,6 @@ h1 {
 h2 {
 	font-size: 18px;
 	font-family: var(--headerfont);
-	text-shadow: var(--l-green) 1px 1px 1px;
 }
 
 h1, h3, h4 {
@@ -59,12 +58,12 @@ h1, h3, h4 {
 }
 
 a {
-	color: var(--d-green);
+	color: var(--white-ish);
   font-style: bold;
 }
 
 a:hover {
-	background-color: var(--white-ish);
+	color: var(--d-green);
 	transition: 400ms ease-in-out;
 	border-radius: 5px;
 }
@@ -95,7 +94,6 @@ h4 {
 	border-radius: 5px;
 }
 
-/* TODO: style the checkboxes to look better/be in an actual list */
 .pack-list {
 	margin-top: -5px;
 	display: inline-grid;
@@ -107,35 +105,40 @@ h4 {
 	margin-top: 15px;
 	text-align: center;
 }
-/* button base style from https://css-tricks.com/overriding-default-button-styles/ */
+/* some of button base style is from https://css-tricks.com/overriding-default-button-styles/ */
 #spinner-button {
-  display: inline-block;
 	border: none;
-	border-radius: 100px;
-	padding: 10px;
+	border-radius: 10px;
+	width: 100%;
   text-decoration: none;
 	background: var(--l-green);
   color: var(--d-green);
-	font-family: var(--headerfont);
+	font-family: var(--titlefont);
   font-size: 50px;
   text-align: center;
 	font-weight: bold;
-	text-shadow: var(--white-ish) 1px 1px 1px;
+	text-shadow: var(--white) 1px 1px 1px;
   transition: 200ms ease-in-out;
   -webkit-appearance: none;
   -moz-appearance: none;
+	appearance: none;
 }
 
 #spinner-button:hover {
-		background: var(--m-green);
+		background: var(--white-ish);
     font-style: bold;
 }
 
 #spinner-button:active {
-	background-color: var(--white-ish);
-	transform: rotate(-540deg)
+	background-color: var(--transblack);
+	color: var(--l-green)
 }
-/* end button style */
+
+#spinner {
+	background-color: var(--m-green);
+	border-radius: 10px;
+	padding: 0.5rem;
+}
 
 #results {
 	margin-top: 15px;
@@ -149,10 +152,18 @@ h4 {
 
 table {
 	table-layout: fixed;
-	width: 80%;
-	border-width: 10px;
-	border-color: var(--black);
+	width: 100%;
+	border: 3px solid var(--d-green);
+	border-radius: 5px;
 	/* need to make actual grid style here */
+}
+
+tbody tr:nth-child(odd) {
+	background-color: var(--l-green);
+}
+
+tbody tr:nth-child(even) {
+	background-color: var(--m-green);
 }
 
 th {
