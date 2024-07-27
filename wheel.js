@@ -149,7 +149,7 @@ function wheelSpin () {
     archStyle: getRandomItem(possibleProperties.archStyles),
     colorScheme: getRandomItem(possibleProperties.colorSchemes),
     packLimit: getRandomItem(possibleProperties.packLimits),
-    ccLimit: Math.random() < 0.5
+    ccLimit: (Math.random() < 0.5) ? 'Yes' : 'No'
   };
   console.log(challengeProperties);
   displayResults(challengeProperties);
