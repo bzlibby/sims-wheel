@@ -22,7 +22,7 @@ export const possibleProperties = {
   lotChallenges: ['Off-the-Grid'],
   specialFeatures: ['Home Gym', 'Art Studio', 'Music Room/Studio', 'Bar', 'Study', 'Pool', 'Gazebo', 'Home Office'],
   lotSizes: ['20x15 / 20x20', '30x20 / 30x30', '40x30 / 40x40', '50x40 / 50x50', '64x64'],
-  householdSizes: ['1 sim', '2-3 sims', '3-5 sims', '6-8 sims'],
+  householdSizes: ['1 Sim', '2-3 Sims', '3-5 Sims', '6-8 Sims'],
   archStyles: ['Spanish Colonial', 'Georgian', 'Manufactured', 'Greek Revival', 'Gothic', 'Italiante', 'Colonial Revival', 'Renaissance Revival', 'Queen Anne', 'Mission', 'Tudor', 'Neoclassical', 'Prairie', 'French Eclectic', 'Craftsman', 'Ranch', 'Modern/Contemporary', 'Brutalist/Bauhaus', 'McMansion', 'Victorian', 'Mediterranean'],
   // styles heavily based on 'the Architecture of American Houses' by Pop Chart Labs: https://99percentinvisible.org/article/style-house-visual-guides-domestic-architectural-designs/
   colorSchemes: ['Basics', 'Neutrals', 'Brights', 'Pastels', 'Cool Colors', 'Warm Colors', 'Greyscale', 'Monochrome'],
@@ -37,7 +37,7 @@ export const packProperties = [
     worlds: ['Magnolia Promenade'],
     lotTraits: [],
     lotChallenges: [],
-    specialFeatures: ['Storefront', 'Science Lab'],
+    specialFeatures: ['Storefront', 'Science Lab', 'Home Office', 'Crime Operation'],
     archStyles: []
   },
   { 
@@ -55,8 +55,8 @@ export const packProperties = [
     worlds: ['San Myshuno'],
     lotTraits: [`Chef's Kitchen`, 'Good Schools', 'Mean Vibe', 'Home Studio', 'Sunny Aspect', 'Penny Pixies', 'Party Place', 'Romantic Aura', 'Great Soil', `Child's Play`, 'On Ley Line', 'Gnomes'],
     lotChallenges: ['Spooky', 'Filthy', 'Gremlins', 'Grody', 'Cursed', 'Quake Zone'],
-    specialFeatures: ['Karaoke Space'],
-    archStyles: ['Apartment/Penthouse']
+    specialFeatures: ['Karaoke Space', 'Apartment/Penthouse (Lot Type)'],
+    archStyles: ['Urban']
   },
   {
     name: 'Cats and Dogs',
@@ -91,7 +91,7 @@ export const packProperties = [
     worlds: ['Britechester'],
     lotTraits: ['Study Spot'],
     lotChallenges: [],
-    specialFeatures: ['Library'],
+    specialFeatures: ['Library', 'Student Housing'],
     archStyles: []
   },
   {
@@ -162,7 +162,7 @@ export const packProperties = [
     worlds: ['Tomarang'],
     lotTraits: [],
     lotChallenges: ['Mold', 'Maintenence Troubles'],
-    specialFeatures: ['Multi-family Home', 'Communal Spaces', 'Courtyard', 'Maintenence Room'],
+    specialFeatures: ['Multi-family Home', 'Communal Spaces', 'Courtyard', 'Rental (Lot Type)'],
     archStyles: [],
   },
   {
@@ -426,7 +426,7 @@ export const packProperties = [
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
-    specialFeatures: ['Tiny Home (lot type)'],
+    specialFeatures: ['Tiny Home (Lot Type)'],
     archStyles: []
   },
   {
@@ -444,7 +444,7 @@ export const packProperties = [
     worlds: [],
     lotTraits: [],
     lotChallenges: [],
-    specialFeatures: ['Haunted House (lot type)', 'Attic'],
+    specialFeatures: ['Haunted House (Lot Type)', 'Attic'],
     archStyles: [],
   },
   {
