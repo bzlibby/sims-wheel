@@ -1,38 +1,40 @@
 :root {
-  --d-green: #447e36;
-  --m-green: #80b76b;
-  --l-green: #b4d99f;
+  --d-green: rgb(46, 83, 36);
+  --m-green: rgb(128, 183, 107, 0.75);
+  --l-green: rgb(180, 217, 159, 0.75);
   --white-ish: rgba(229, 250, 232, 0.75);
   --white: #fff;
 	--black: #000;
 	--transblack: rgb(0, 0, 0, 0.8);
-  --titlefont: 'Rock Salt', Arial, sans-serif;
-	--headerfont: 'Stint Ultra Condensed', serif;
-	--bodyfont: 'Lato', Arial, sans-serif;
+    --titlefont: 'Belanosima', Arial, sans-serif;
+	--headerfont: 'Crimson Pro', serif;
+	--bodyfont: 'Lexend', Arial, sans-serif;
 }
 
 body {
-  background-image: url('./palmleaf.png');
-	background-color: var(--white-ish);
+  background-image: url('./buildbg.png');
+  background-color: var(--white-ish);
   margin: auto;
   width: 80%;
+	background-size: cover;
 }
 
 header {
-  font-family: var(--headerfont);
 	text-align: center;
 	margin-top: 50px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	background-color: var(--white-ish);
+	background-color: var(--m-green);
 	border-radius: 10px;
 }
 
 header h1 {
   font-family: var(--titlefont);
-  color: var(--m-green);
-	text-shadow: var(--d-green) 1px 1px 1px;
+  color: var(--d-green);
+	text-shadow: var(--white) 1px 1px 1px;
   margin-bottom: 5px;
+	background-color: var(--l-green);
+	border-radius: 10px;
 }
 
 h1 {
@@ -43,19 +45,25 @@ h1 {
 	margin-right: 10px;
 	margin-top: 0px;
 }
+
 h2 {
 	font-size: 18px;
-	margin-top: -30px;
+	font-family: var(--headerfont);
+}
+
+h1, h3, h4 {
+	font-family: var(--titlefont);
+	color: var(--d-green);
+	text-shadow: var(--white) 1px 1px 1px;
 }
 
 a {
-	color: var(--d-green);
+	color: var(--white-ish);
   font-style: bold;
 }
 
 a:hover {
-	color: var(--l-green);
-	background-color: var(--white-ish);
+	color: var(--d-green);
 	transition: 400ms ease-in-out;
 	border-radius: 5px;
 }
@@ -70,24 +78,22 @@ a:hover {
 }
 
 h3 {
-	font-family: var(--headerfont);
 	font-size: 30px;
 	text-align: center;
 	background-color: var(--l-green);
-	color: var(--d-green);
 	padding-top: 5px;
 	border-radius: 5px;
 	margin-top: 0px;
-	text-shadow: var(--white-ish) 1px 1px 1px
 }
 
 h4 {
-	font-family: var(--headerfont);
 	font-size: 24px;
 	margin-bottom: 10px;
+	text-align: center;
+	background-color: var(--l-green);
+	border-radius: 5px;
 }
 
-/* TODO: style the checkboxes to look better/be in an actual list */
 .pack-list {
 	margin-top: -5px;
 	display: inline-grid;
@@ -99,34 +105,40 @@ h4 {
 	margin-top: 15px;
 	text-align: center;
 }
-/* button base style from https://css-tricks.com/overriding-default-button-styles/ */
+/* some of button base style is from https://css-tricks.com/overriding-default-button-styles/ */
 #spinner-button {
-  display: inline-block;
 	border: none;
-	border-radius: 100px;
-	padding: 10px;
+	border-radius: 10px;
+	width: 100%;
   text-decoration: none;
 	background: var(--l-green);
   color: var(--d-green);
 	font-family: var(--titlefont);
   font-size: 50px;
   text-align: center;
-	text-shadow: var(--white-ish) 1px 1px 1px;
+	font-weight: bold;
+	text-shadow: var(--white) 1px 1px 1px;
   transition: 200ms ease-in-out;
   -webkit-appearance: none;
   -moz-appearance: none;
+	appearance: none;
 }
 
 #spinner-button:hover {
-		background: var(--m-green);
+		background: var(--white-ish);
     font-style: bold;
 }
 
 #spinner-button:active {
-	background-color: var(--white-ish);
-	transform: rotate(-540deg)
+	background-color: var(--transblack);
+	color: var(--l-green)
 }
-/* end button style */
+
+#spinner {
+	background-color: var(--m-green);
+	border-radius: 10px;
+	padding: 0.5rem;
+}
 
 #results {
 	margin-top: 15px;
@@ -140,10 +152,23 @@ h4 {
 
 table {
 	table-layout: fixed;
-	width: 80%;
-	border-width: 10px;
-	border-color: var(--black);
-	font-family: var(--bodyfont);
+	width: 100%;
+	border: 3px solid var(--d-green);
+	border-radius: 5px;
+	/* need to make actual grid style here */
+}
+
+tbody tr:nth-child(odd) {
+	background-color: var(--l-green);
+}
+
+tbody tr:nth-child(even) {
+	background-color: var(--m-green);
+}
+
+th {
+	font-family: var(--headerfont);
+	font-size: 16px;
 }
 
 footer {
