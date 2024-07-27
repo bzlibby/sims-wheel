@@ -21,11 +21,11 @@ export const possibleProperties = {
   lotTraits: ['Great Acoustics', 'Fast Internet', 'Homey', 'Science Lair', 'Convival', 'Natural Light', 'Bracing Breezes', 'Private Dwelling', 'Teen Neighborhood', 'Clothing Optional'],
   lotChallenges: ['Off-the-Grid'],
   specialFeatures: ['Home Gym', 'Art Studio', 'Music Room/Studio', 'Bar', 'Study', 'Pool', 'Gazebo', 'Home Office'],
-  lotSizes: ['20x15 / 20x20', '30x20 / 30x30', '40x30 / 40x40', '50x40 / 50/50', '64x64'],
+  lotSizes: ['20x15 / 20x20', '30x20 / 30x30', '40x30 / 40x40', '50x40 / 50x50', '64x64'],
   householdSizes: ['1 sim', '2-3 sims', '3-5 sims', '6-8 sims'],
-  archStyles: ['Spanish Colonial', 'Georgian', 'Manufactured', 'Greek Revival', 'Gothic', 'Italiante', 'Colonial Revival', 'Renessaince Revival', 'Queen Anne', 'Mission', 'Tudor', 'Neoclassical', 'Prairie', 'French Eclectic', 'Crafstman', 'Ranch', 'Modern/Contemporary', 'Brutalist/Bauhaus', 'McMansion', 'Victorian', 'Mediterranean'],
+  archStyles: ['Spanish Colonial', 'Georgian', 'Manufactured', 'Greek Revival', 'Gothic', 'Italiante', 'Colonial Revival', 'Renaissance Revival', 'Queen Anne', 'Mission', 'Tudor', 'Neoclassical', 'Prairie', 'French Eclectic', 'Craftsman', 'Ranch', 'Modern/Contemporary', 'Brutalist/Bauhaus', 'McMansion', 'Victorian', 'Mediterranean'],
   // styles heavily based on 'the Architecture of American Houses' by Pop Chart Labs: https://99percentinvisible.org/article/style-house-visual-guides-domestic-architectural-designs/
-  colorSchemes: ['Basics', 'Neutrals', 'Brights', 'Pastels', 'Cool Colors', 'Warm Colors', 'Greyscale'],
+  colorSchemes: ['Basics', 'Neutrals', 'Brights', 'Pastels', 'Cool Colors', 'Warm Colors', 'Greyscale', 'Monochrome'],
   packLimits: ['No Limit', 'Base Game Only', `1 Pack (Builder's Choice)`]
 };
 
@@ -54,7 +54,7 @@ export const packProperties = [
     type: 'Expansion',
     worlds: ['San Myshuno'],
     lotTraits: [`Chef's Kitchen`, 'Good Schools', 'Mean Vibe', 'Home Studio', 'Sunny Aspect', 'Penny Pixies', 'Party Place', 'Romantic Aura', 'Great Soil', `Child's Play`, 'On Ley Line', 'Gnomes'],
-    lotChallenges: ['Spooky', 'Filty', 'Gremlins', 'Grody', 'Cursed', 'Quake Zone'],
+    lotChallenges: ['Spooky', 'Filthy', 'Gremlins', 'Grody', 'Cursed', 'Quake Zone'],
     specialFeatures: ['Karaoke Space'],
     archStyles: ['Apartment/Penthouse']
   },
