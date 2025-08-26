@@ -1,6 +1,6 @@
 /* this file includes the properties for every pack
  * 
- * it was last updated: July 25, 2024 [Lovestruck]
+ * it was last updated: Aug. 26th, 2025 [Enchanted By Nature]
  */
 
 /* each new pack should have the following keys:
@@ -170,10 +170,36 @@ export const packProperties = [
     type: 'Expansion',
     worlds: ['Ciudad Enamorada'],
     lotTraits: ['Singles Hangout'],
-    // TODO: check if this trait can be used on residential lots
     lotChallenges: [],
     specialFeatures: ['Bachelor/ette Pad', 'Hot Tub'],
     archStyles: [],
+  },
+  {
+    name: 'Life & Death',
+    type: 'Expansion',
+    worlds: ['Ravenwood'],
+    lotTraits: ['On Hallowed Ground'],
+    lotChallenges: [],
+    specialFeatures: ['Family Cemetery'],
+    archStyles: ['Brâncovenesc', 'Neo-Romanian'],
+  },
+  {
+    name: 'Business & Hobbies',
+    type: 'Expansion',
+    worlds: ['Nordhaven'],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Home Office/Studio', 'Small Business Storefront'],
+    archStyles: ['Scandinavian'],
+  },
+  {
+    name: 'Enchanted by Nature',
+    type: 'Expansion',
+    worlds: ['Innisgreen'],
+    lotTraits: ['Fairy Passage'],
+    lotChallenges: [],
+    specialFeatures: ['Magic Garden', 'Outdoor Dining Space'],
+    archStyles: ['Fantasy', 'Neo-Celtic'],
   },
   // GAME PACKS
   {
@@ -743,6 +769,150 @@ export const packProperties = [
     lotTraits: [],
     lotChallenges: [],
     specialFeatures: ['Breakfast/Coffee Nook', 'Dining Patio'],
+    archStyles: []
+  },
+  {
+    name: 'Artist Studio',
+    type: 'Kit',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Art Studio', 'Art Gallery'],
+    archStyles: []
+  },
+  {
+    name: 'Storybook Nursery',
+    type: 'Kit',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Nursery'],
+    archStyles: []
+  },
+  {
+    name: 'Casanova Cave',
+    type: 'Kit',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Bachelor/ette Pad', 'Game Room'],
+    archStyles: []
+  },
+  {
+    name: 'Comfy Gamer',
+    type: 'Kit',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Gaming Room'],
+    archStyles: []
+  },
+  {
+    name: 'Secret Sanctuary',
+    type: 'Kit',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Hidden Room'],
+    archStyles: []
+  },
+  {
+    name: 'Golden Years',
+    type: 'Kit',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: [],
+    archStyles: []
+  },
+  {
+    name: 'Kitchen Clutter',
+    type: 'Kit',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Breakfast Nook'],
+    archStyles: []
+  },
+  {
+    name: 'Restoration Workshop',
+    type: 'Kit',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: ['Workshop'],
+    archStyles: []
+  },
+  {
+    name: 'Trillyke\'s Sweet Slumber Party',
+    type: 'Kit',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: [],
+    archStyles: []
+  },
+  {
+    name: 'myshunosun\'s Cozy Kitsch',
+    type: 'Kit',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: [],
+    archStyles: []
+  },
+  {
+    name: 'Madlen\'s Business Chic',
+    type: 'Kit',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: [],
+    archStyles: []
+  },
+  {
+    name: 'Pierisim\'s Refined Living Room',
+    type: 'Kit',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: [],
+    archStyles: []
+  },
+  {
+    name: 'Syboulette\'s Sleek Bathroom',
+    type: 'Kit',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: [],
+    archStyles: []
+  },
+  {
+    name: 'aharris00brittney\'s Sweet Allure',
+    type: 'Kit',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: [],
+    archStyles: []
+  },
+  {
+    name: 'Peacemaker\'s Grange Mudroom',
+    type: 'Kit',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: [],
+    archStyles: []
+  },
+  {
+    name: 'crypticsim\'s Essential Glam',
+    type: 'Kit',
+    worlds: [],
+    lotTraits: [],
+    lotChallenges: [],
+    specialFeatures: [],
     archStyles: []
   }
 ];
